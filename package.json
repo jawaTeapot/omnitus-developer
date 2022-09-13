@@ -1,0 +1,27 @@
+{
+  "name": "omnitus",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "dev": "gulp watch",
+    "build": "gulp build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jawaTeapot/omnitus.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jawaTeapot/omnitus/issues"
+  },
+  "homepage": "https://github.com/jawaTeapot/omnitus#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-ejs": "^5.1.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.54.5"
+  }
+}

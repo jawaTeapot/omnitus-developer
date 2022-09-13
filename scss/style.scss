@@ -1,0 +1,14 @@
+@import "reset";
+@import "_common.scss";
+
+html {
+  font-size: calc(100vw / 375);
+  @include desktop {
+    font-size: calc(100vw / 1440);
+  }
+}
+.container {
+  width: 100%;
+  max-width: 1170rem;
+  margin: 0 auto;
+}
