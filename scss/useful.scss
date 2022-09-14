@@ -1,0 +1,64 @@
+.useful {
+  &__top {
+    padding-top: 62rem;
+    position: relative;
+    &-heading {
+      font-family: 'enthalpy298regular', sans-serif;
+      font-weight: 400;
+      font-size: 60px;
+      line-height: 72rem;
+      color: $white;
+      text-shadow: 0 1rem 10rem rgba(115, 159, 187, 0.2);
+    }
+    &-img {
+      position: absolute;
+      width: 160rem;
+      height: 146rem;
+      top: 0;
+      left: 173px;
+    }
+  }
+  &__bottom {
+    margin-top: 12rem;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__card {
+    padding: 87rem 20rem 88rem;
+    width: 574rem;
+    background: $white;
+    border-radius: 20rem;
+    position: relative;
+    &-heading {
+      font-weight: 700;
+      font-size: 26rem;
+      line-height: 31rem;
+      color: $black2;
+    }
+    &-btn {
+      margin-top: 22rem;
+      width: 244rem;
+      height: 64rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 20rem;
+      line-height: 24rem;
+    }
+    &-img {
+      position: absolute;
+      width: 751rem;
+      height: 1308rem;
+      right: -42px;
+      top: -151px;
+    }
+    &-img--2 {
+      position: absolute;
+      width: 1409rem;
+      height: 1271rem;
+      right: -104px;
+      top: -113px;
+    }
+  }
+}

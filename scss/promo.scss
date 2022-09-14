@@ -1,0 +1,110 @@
+.promo {
+  padding-top: 86rem;
+  background-image: url("../img/promo-fone.png");
+  background-repeat: no-repeat;
+  background-size: 939rem 750rem;
+  background-position: left;
+  position: relative;
+  &__top {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    &-heading {
+      margin-right: 41rem;
+      font-family: 'enthalpy298regular', sans-serif;
+      font-weight: 400;
+      font-size: 160rem;
+      line-height: 138rem;
+      color: $white;
+      text-shadow: 0 1rem 10rem rgba(115, 159, 187, 0.2);
+    }
+    &-text {
+      font-weight: 400;
+      font-size: 20rem;
+      line-height: 21rem;
+      color: $black;
+      position: absolute;
+      top: 23rem;
+      right: 14rem;
+    }
+  }
+  &__plan {
+    margin-top: 100rem;
+    padding: 49rem 30rem 50rem 20rem;
+    background: $white;
+    border-radius: 37rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    &-heading {
+      font-weight: 400;
+      font-size: 26rem;
+      line-height: 31rem;
+      color: $black;
+      span {
+        font-weight: 700;
+      }
+    }
+    &-block {
+      display: flex;
+      align-items: center;
+    }
+    &-item {
+      padding: 21rem 57rem 21rem 22rem;
+      background-color: $white;
+      border: 1rem solid $gray2;
+      border-radius: 120rem;
+    }
+    &-input {
+      width: 100%;
+      font-weight: 400;
+      font-size: 16rem;
+      line-height: 21rem;
+    }
+    &-btn {
+      margin-left: 23rem;
+      padding: 20rem 46rem;
+      font-weight: 700;
+      font-size: 20rem;
+      line-height: 24rem;
+    }
+    &-img {
+      position: absolute;
+      top: -138rem;
+      right: 14rem;
+    }
+  }
+  &__sticker {
+    position: absolute;
+    font-weight: 700;
+    font-size: 25rem;
+    line-height: 30rem;
+    color: $white;
+    &-1 {
+      padding: 15rem 15rem;
+      bottom: 198rem;
+      left: 127rem;
+      background: $blue2;
+      transform: rotate(-12deg);
+    }
+    &-2 {
+      padding: 11rem 6rem;
+      font-size: 20rem;
+      line-height: 24rem;
+      top: 103rem;
+      left: 472rem;
+      background: $yellow;
+      transform: rotate(9deg);
+    }
+    &-3 {
+      padding: 10rem 7rem;
+      font-size: 20rem;
+      line-height: 24rem;
+      top: 218rem;
+      left: 696rem;
+      background: $orange2;
+      transform: rotate(-27deg);
+    }
+  }
+}

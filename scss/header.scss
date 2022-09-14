@@ -1,0 +1,20 @@
+.header {
+  margin-top: 17rem;
+  display: flex;
+  justify-content: space-between;
+  &__link {
+    width: 128rem;
+    font-weight: 700;
+    font-size: 14rem;
+    line-height: 17rem;
+    text-decoration-line: underline;
+    color: $white;
+  }
+  &__btn {
+    margin-left: 93rem;
+    padding: 13rem 34rem;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19rem;
+  }
+}

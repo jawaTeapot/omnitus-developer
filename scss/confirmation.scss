@@ -1,0 +1,52 @@
+.confirmation {
+  ///////////////////
+  margin-top: 166rem;
+  ////////////////////
+  width: 1179rem;
+  height: 555rem;
+  padding: 57rem 110rem 72rem 60rem;
+  background: $white;
+  border-radius: 37rem;
+  position: relative;
+  &__heading {
+    margin-bottom: 21rem;
+    font-family: 'enthalpy298regular', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 60rem;
+    line-height: 72rem;
+    color: $primary;
+  }
+  &__text {
+    margin-bottom: 8rem;
+    font-weight: 400;
+    font-size: 26rem;
+    line-height: 32rem;
+    color: $primary;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  &__buttons {
+    margin-top: 29rem;
+    display: flex;
+    align-items: center;
+  }
+  &__btn {
+    margin-right: 20rem;
+    padding: 20rem 42rem;
+    font-weight: 700;
+    font-size: 20rem;
+    line-height: 24rem;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  &__img {
+    position: absolute;
+    top: -106rem;
+    right: -136rem;
+    width: 409rem;
+    height: 381rem;
+  }
+}

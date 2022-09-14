@@ -1,0 +1,43 @@
+.waiver {
+  ///////////////////
+  margin-top: 100rem;
+  ////////////////////
+  padding: 60rem;
+  width: 1179rem;
+  height: 358rem;
+  background: $white;
+  border-radius: 37rem;
+  position: relative;
+  &__heading {
+    margin-bottom: 33rem;
+    font-family: 'enthalpy298regular', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 60rem;
+    line-height: 72rem;
+    color: $primary;
+  }
+  &__btn {
+    padding: 20rem 90rem;
+    font-weight: 700;
+    font-size: 20rem;
+    line-height: 24rem;
+  }
+  &__img {
+    position: absolute;
+    top: -140px;
+    right: -58px;
+    width: 420rem;
+    height: 418rem;
+  }
+  &__shadow {
+    width: 109rem;
+    height: 20rem;
+    position: absolute;
+    bottom: 167px;
+    right: 42px;
+    background: rgba(0, 0, 0, 0.07);
+    filter: blur(17rem);
+    transform: matrix(0.93, -0.36, 0.36, 0.93, 0, 0);
+  }
+}

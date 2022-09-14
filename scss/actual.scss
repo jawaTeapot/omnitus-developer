@@ -1,0 +1,74 @@
+.actual {
+  &__top {
+    padding-top: 62rem;
+    position: relative;
+    &-heading {
+      font-family: 'enthalpy298regular', sans-serif;
+      font-weight: 400;
+      font-size: 60rem;
+      line-height: 72rem;
+      color: $white;
+      text-shadow: 0 1rem 10rem rgba(115, 159, 187, 0.2);
+    }
+    &-img {
+      position: absolute;
+      width: 118rem;
+      height: 120rem;
+      top: 1px;
+      left: 214px;
+    }
+  }
+  &__bottom {
+    margin-top: 12rem;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__showcase {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20rem;
+  }
+  &__block {
+    width: 378rem;
+    padding: 172rem 20rem;
+    background-image: url("../img/covid-fone.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    &-heading {
+      font-family: 'enthalpy298regular', sans-serif;
+      font-weight: 400;
+      font-size: 40rem;
+      line-height: 48rem;
+      color: $white;
+    }
+    &-text {
+      margin-top: 5rem;
+      font-weight: 400;
+      font-size: 26rem;
+      line-height: 31rem;
+      color: #FFFFFF;
+    }
+    &-btn {
+      margin-top: 22rem;
+      padding: 20rem 89rem;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 24rem;
+    }
+    &-img1 {
+      position: absolute;
+      width: 264rem;
+      height: 262rem;
+      top: -104px;
+      left: -50px;
+    }
+    &-img2 {
+      position: absolute;
+      width: 175rem;
+      height: 173rem;
+      bottom: -65px;
+      right: -83px;
+    }
+  }
+}
