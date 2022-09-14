@@ -17,6 +17,9 @@
       line-height: 138rem;
       color: $white;
       text-shadow: 0 1rem 10rem rgba(115, 159, 187, 0.2);
+      &--VideoAudio {
+        display: none;
+      }
     }
     &-text {
       font-weight: 400;
@@ -49,6 +52,9 @@
     &-block {
       display: flex;
       align-items: center;
+      &--ideoAudio {
+        display: none;
+      }
     }
     &-item {
       padding: 21rem 57rem 21rem 22rem;
@@ -73,6 +79,14 @@
       position: absolute;
       top: -138rem;
       right: 14rem;
+      &--VideoAudio {
+        display: none;
+        position: absolute;
+        width: 408rem;
+        height: 205rem;
+        top: -134rem;
+        left: 3px;
+      }
     }
   }
   &__sticker {
@@ -105,6 +119,41 @@
       left: 696rem;
       background: $orange2;
       transform: rotate(-27deg);
+    }
+    &-4 {
+      display: none;
+      padding: 10rem 7rem;
+      font-size: 20rem;
+      line-height: 24rem;
+      top: 248rem;
+      left: 188rem;
+      background: $yellow;
+      transform: rotate(-30deg);
+    }
+    &-5 {
+      display: none;
+      padding: 10rem 7rem;
+      font-size: 20rem;
+      line-height: 24rem;
+      top: 104rem;
+      left: 461rem;
+      background: $orange2;
+      transform: rotate(12deg);
+    }
+  }
+  &__img {
+    display: none;
+    position: absolute;
+    &-1 {
+      width: 111rem;
+      top: 123px;
+      right: 246px;
+    }
+    &-2 {
+      width: 120rem;
+      height: 120rem;
+      bottom: 216px;
+      right: 306px;
     }
   }
 }

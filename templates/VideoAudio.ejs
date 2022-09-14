@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang=ru>
+<%- include('head.ejs'); %>
+<body>
+<%- include('header.ejs'); %>
+<main class="VideoAudio">
+    <%- include('promo.ejs'); %>
+    <section class="container">
+        <div class="VideoAudio__nav">
+            <div class="VideoAudio__nav-btn VideoAudio__nav-btn--active btn-secondary">Все</div>
+            <div class="VideoAudio__nav-btn btn-secondary">Видео</div>
+            <div class="VideoAudio__nav-btn btn-secondary">Аудио</div>
+        </div>
+        <div class="VideoAudio__showcase">
+            <div class="VideoAudio__showcase-top">
+                <%- include('cardVideo.ejs'); %>
+                <%- include('cardAudio.ejs'); %>
+                <%- include('cardVideo.ejs'); %>
+                <%- include('cardAudio.ejs'); %>
+                <%- include('cardVideo.ejs'); %>
+                <%- include('cardAudio.ejs'); %>
+            </div>
+        </div>
+        <button class="VideoAudio__btn">
+            Открыть больше
+            <img class="VideoAudio__btn-img" src="./img/arrow-down.svg" alt="v">
+        </button>
+    </section>
+    <%- include('subscription.ejs'); %>
+    <%- include('info.ejs'); %>
+</main>
+<%- include('footer.ejs'); %>
+<script type="text/javascript" src="./js/main.js"></script>
+</body>
+</html>

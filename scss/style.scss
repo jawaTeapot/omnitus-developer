@@ -7,6 +7,7 @@ $black2: #313131;
 $primary: #333333;
 $gray: #A3A3A3;
 $gray2: #DDDDDD;
+$gray3: #C4C4C4;
 $white: #FFFFFF;
 $blue: #316DB5;
 $blue2: #4698F8;
@@ -41,7 +42,7 @@ body {
   color: $white;
 }
 .btn-secondary {
-  background-color: #C4C4C4;
+  background-color: $gray3;
   border: none;
   outline: none;
   cursor: pointer;
@@ -67,3 +68,5 @@ body {
 @import "footer.scss";
 @import "confirmation.scss";
 @import "waiver.scss";
+@import "VideoAudio.scss";
+@import "Video.scss";

@@ -1,0 +1,116 @@
+.VideoAudio {
+  .promo {
+    background-image: url("../img/promo-fone2.png");
+    background-position: 569rem -62rem;
+    background-size: 815rem 753rem;
+    &__top {
+      justify-content: flex-start;
+      &-heading {
+        display: none;
+        &--VideoAudio {
+          display: block;
+        }
+      }
+      &-text {
+        display: none;
+      }
+    }
+    &__plan {
+      padding-right: 55rem;
+      &-heading {
+        display: none;
+      }
+      &-block {
+        display: none;
+        width: 100%;
+        &--VideoAudio {
+          display: flex;
+        }
+      }
+      &-item {
+        width: 100%;
+      }
+      &-btn {
+        padding: 20rem 92rem;
+      }
+      &-img {
+        display: none;
+        &--VideoAudio {
+          display: block;
+        }
+      }
+    }
+    &__sticker {
+      &-1 {
+        display: none;
+      }
+      &-2 {
+        padding: 7rem 6rem;
+        font-size: 25rem;
+        line-height: 30rem;
+        top: 240rem;
+        right: 250px;
+        left: auto;
+        background: $blue2;
+        transform: rotate(9deg);
+      }
+      &-3 {
+        display: none;
+      }
+      &-4 {
+        display: block;
+      }
+      &-5 {
+        display: block;
+      }
+    }
+    &__img {
+      display: block;
+    }
+  }
+  &__nav {
+    margin-top: 65rem;
+    display: flex;
+    align-items: center;
+    &-btn {
+      margin-right: 20rem;
+      padding: 16rem 29rem;
+      font-weight: 700;
+      font-size: 16rem;
+      line-height: 21rem;
+      &:last-child {
+        margin-right: 0;
+      }
+      &--active {
+        background-color: $orange;
+      }
+    }
+  }
+  &__showcase {
+    margin-top: 21rem;
+    background: linear-gradient(180deg, #D9D9D9 81.53%, rgba(217, 217, 217, 0) 104.64%);
+    &-top {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 10rem 20rem;
+    }
+  }
+  &__btn {
+    margin: 22rem auto 0;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 26rem;
+    line-height: 31rem;
+    text-decoration-line: underline;
+    color: $white;
+    display: block;
+    &-img {
+      margin-left: 10rem;
+      width: 12rem;
+      height: 13rem;
+    }
+  }
+}
