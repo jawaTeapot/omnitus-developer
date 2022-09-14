@@ -10,6 +10,7 @@ $gray2: #DDDDDD;
 $white: #FFFFFF;
 $blue: #316DB5;
 $blue2: #4698F8;
+$blue3: #D0E9EE;
 $yellow: #FFCC68;
 $orange: #E8742F;
 $orange2: #FF9C41;
@@ -62,5 +63,7 @@ body {
 @import "cardAudio.scss";
 @import "useful.scss";
 @import "subscription.scss";
+@import "info.scss";
+@import "footer.scss";
 @import "confirmation.scss";
 @import "waiver.scss";

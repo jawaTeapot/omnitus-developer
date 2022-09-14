@@ -1,0 +1,49 @@
+.footer {
+  width: 100%;
+  max-width: 1304rem;
+  margin: 29rem auto 0;
+  padding: 35rem 0 67rem;
+  background: $white;
+  border-radius: 37rem 37rem 0 0;
+  &__content {
+    display: flex;
+  }
+  &__img {
+    margin-left: 10rem;
+    width: 159rem;
+    height: 101rem;
+  }
+  &__flex {
+    margin: 16rem 35rem 0 47rem;
+    display: flex;
+  }
+  &__block {
+    width: 333rem;
+    margin-right: 13rem;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  &__text {
+    font-family: 'Trebuchet MS', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14rem;
+    line-height: 16rem;
+    color: $gray;
+  }
+  &__list {
+    margin-top: 15rem;
+  }
+  &__link {
+    margin-bottom: 17rem;
+    font-weight: 700;
+    font-size: 14rem;
+    line-height: 21rem;
+    text-decoration-line: underline;
+    color: $blue;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

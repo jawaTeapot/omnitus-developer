@@ -1,0 +1,13 @@
+.info {
+  margin-top: 64rem;
+  &__text {
+    font-family: 'enthalpy298regular', sans-serif;
+    font-weight: 400;
+    font-size: 27rem;
+    line-height: 35rem;
+    letter-spacing: 0.04em;
+    color: $white;
+    opacity: 0.6;
+    text-shadow: 0 1rem 10rem rgba(115, 159, 187, 0.2);
+  }
+}
