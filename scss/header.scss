@@ -1,13 +1,37 @@
 .header {
-  margin-top: 17rem;
+  padding-top: 17rem;
   display: flex;
+  align-items: center;
   justify-content: space-between;
   @include mobile {
-    display: none;
+    padding-top: 12rem;
   }
-
+  &__menu {
+    width: 40rem;
+    height: 40rem;
+    border-radius: 50%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.1);
+    &-img {
+      width: 24rem;
+      height: 16rem;
+    }
+    @include mobile {
+      display: flex;
+    }
+  }
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    @include mobile {
+      display: none;
+    }
+  }
   &__link {
-    width: 128rem;
+    margin-right: 8rem;
+    width: 148rem;
     font-weight: 700;
     font-size: 14rem;
     line-height: 17rem;
@@ -15,10 +39,14 @@
     color: $white;
   }
   &__btn {
-    margin-left: 93rem;
     padding: 13rem 34rem;
     font-weight: 700;
-    font-size: 16px;
+    font-size: 16rem;
     line-height: 19rem;
+    @include mobile {
+      padding: 9rem 29rem;
+      font-size: 14rem;
+      line-height: 17rem;
+    }
   }
 }

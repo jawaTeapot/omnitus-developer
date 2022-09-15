@@ -2,26 +2,43 @@
   &__top {
     padding-top: 62rem;
     position: relative;
+    @include mobile {
+      padding-top: 49rem;
+    }
     &-heading {
       font-family: 'enthalpy298regular', sans-serif;
       font-weight: 400;
-      font-size: 60px;
+      font-size: 60rem;
       line-height: 72rem;
       color: $white;
       text-shadow: 0 1rem 10rem rgba(115, 159, 187, 0.2);
+      @include mobile {
+        font-size: 47rem;
+        line-height: 48rem;
+      }
     }
     &-img {
       position: absolute;
       width: 160rem;
       height: 146rem;
       top: 0;
-      left: 173px;
+      left: 173rem;
+      @include mobile {
+        width: 100rem;
+        height: 94rem;
+        top: 5px;
+        left: 143rem;
+      }
     }
   }
   &__bottom {
     margin-top: 12rem;
     display: flex;
     justify-content: space-between;
+    @include mobile {
+      margin-top: 24rem;
+      flex-direction: column;
+    }
   }
   &__card {
     padding: 87rem 20rem 88rem;
@@ -29,11 +46,23 @@
     background: $white;
     border-radius: 20rem;
     position: relative;
+    @include mobile {
+      padding: 28rem 17rem 29rem;
+      width: 327rem;
+      margin-bottom: 24rem;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
     &-heading {
       font-weight: 700;
       font-size: 26rem;
       line-height: 31rem;
       color: $black2;
+      @include mobile {
+        font-size: 21rem;
+        line-height: 26rem;
+      }
     }
     &-btn {
       margin-top: 22rem;
@@ -45,20 +74,39 @@
       font-weight: 700;
       font-size: 20rem;
       line-height: 24rem;
+      @include mobile {
+        margin-top: 32rem;
+        width: 295rem;
+        height: 67rem;
+        font-size: 24rem;
+      }
     }
     &-img {
       position: absolute;
       width: 751rem;
       height: 1308rem;
-      right: -42px;
-      top: -151px;
+      right: -42rem;
+      top: -151rem;
+      @include mobile {
+        width: 410rem;
+        height: 610rem;
+        right: -269rem;
+        top: -92rem;
+        transform: rotate(-67deg);
+      }
     }
     &-img--2 {
       position: absolute;
       width: 1409rem;
       height: 1271rem;
-      right: -104px;
-      top: -113px;
+      right: -104rem;
+      top: -113rem;
+      @include mobile {
+        width: 563rem;
+        height: 517rem;
+        right: -15rem;
+        top: -68rem;
+      }
     }
   }
 }

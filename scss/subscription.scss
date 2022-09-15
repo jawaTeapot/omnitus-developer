@@ -6,58 +6,100 @@
   display: flex;
   justify-content: space-between;
   position: relative;
+  @include mobile {
+    margin-top: 51rem;
+    padding: 29rem 15rem;
+    flex-direction: column;
+  }
   &__left {
     margin-top: 23rem;
+    @include mobile {
+      margin-top: 0;
+    }
     &-heading {
       font-family: 'enthalpy298regular', sans-serif;
       font-weight: 400;
       font-size: 50rem;
       line-height: 60rem;
       color: $primary;
+      @include mobile {
+        margin-left: 74rem;
+        font-size: 41rem;
+        line-height: 49rem;
+      }
     }
     &-text {
-      margin-top: 4px;
+      margin-top: 4rem;
       font-weight: 400;
       font-size: 18rem;
       line-height: 22rem;
       color: $primary;
+      @include mobile {
+        margin-left: 74rem;
+        font-size: 18rem;
+        line-height: 21rem;
+      }
     }
   }
   &__form {
     width: 370rem;
+    @include mobile {
+      margin-top: 16rem;
+      width: 297rem;
+    }
     &-heading {
       font-weight: 400;
-      font-size: 16px;
+      font-size: 16rem;
       line-height: 19rem;
       color: $primary;
     }
     &-block {
       margin-top: 9rem;
       padding-top: 6rem;
-      padding-bottom: 12rem;
-      border-bottom: 1px solid $primary;
+      padding-bottom: 8rem;
+      border-bottom: 1rem solid $primary;
+      @include mobile {
+        padding-bottom: 15rem;
+      }
     }
     &-input {
       width: 100%;
       background-color: transparent;
+      font-weight: 400;
+      font-size: 16rem;
+      line-height: 19rem;
+      &::placeholder {
+        color: $gray4;
+      }
     }
     &-checkbox {
       margin-top: 15rem;
+      @include mobile {
+        margin-top: 20rem;
+      }
     }
     &-btn {
       margin-top: 20rem;
       padding: 20rem 57rem;
       font-weight: 700;
-      font-size: 20px;
+      font-size: 20rem;
       line-height: 24rem;
+      @include mobile {
+        margin-top: 30rem;
+        padding: 22rem 68rem;
+        font-size: 24rem;
+      }
     }
   }
   &__img {
     position: absolute;
     width: 486rem;
     height: 849rem;
-    top: -169px;
-    left: -135px;
+    top: -169rem;
+    left: -135rem;
+    @include mobile {
+    display: none;
+    }
   }
 }
 
@@ -81,6 +123,9 @@
   &:last-child {
     padding-top: 4rem;
     margin-bottom: 0;
+  }
+  @include mobile {
+    margin-top: 21rem;
   }
 }
 .container-checkbox input {

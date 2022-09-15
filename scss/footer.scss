@@ -2,25 +2,44 @@
   width: 100%;
   max-width: 1304rem;
   margin: 29rem auto 0;
-  padding: 35rem 0 67rem;
+  padding: 35rem 0 75rem;
   background: $white;
   border-radius: 37rem 37rem 0 0;
+  @include mobile {
+    margin-top: 17rem;
+    max-width: 329rem;
+    padding: 18rem 15rem 34rem;
+  }
   &__content {
     display: flex;
+    @include mobile {
+     flex-wrap: wrap;
+    }
   }
   &__img {
     margin-left: 10rem;
+    margin-right: 47rem;
     width: 159rem;
     height: 101rem;
-  }
-  &__flex {
-    margin: 16rem 35rem 0 47rem;
-    display: flex;
+    @include mobile {
+      margin-left: 0;
+      margin-right: 20rem;
+      width: 90rem;
+      height: 80rem;
+    }
   }
   &__block {
     width: 333rem;
     margin-right: 13rem;
-    &:last-child {
+    margin-top: 16rem;
+    &--2 {
+      @include mobile {
+        width: 287rem !important;
+      }
+    }
+    @include mobile {
+      width: 184rem;
+      margin-top: 4rem;
       margin-right: 0;
     }
   }
@@ -31,9 +50,18 @@
     font-size: 14rem;
     line-height: 16rem;
     color: $gray;
+    @include mobile {
+      font-size: 10px;
+      line-height: 12px;
+    }
   }
   &__list {
     margin-top: 15rem;
+    margin-left: 22rem;
+    @include mobile {
+      margin-top: 22rem;
+      margin-left: 0;
+    }
   }
   &__link {
     margin-bottom: 17rem;
@@ -44,6 +72,10 @@
     color: $blue;
     &:last-child {
       margin-bottom: 0;
+    }
+    @include mobile {
+      font-size: 16rem;
+      line-height: 24rem;
     }
   }
 }

@@ -1,5 +1,8 @@
 .info {
   margin-top: 64rem;
+  @include mobile {
+    margin-top: 71rem;
+  }
   &__text {
     font-family: 'enthalpy298regular', sans-serif;
     font-weight: 400;
@@ -9,5 +12,10 @@
     color: $white;
     opacity: 0.6;
     text-shadow: 0 1rem 10rem rgba(115, 159, 187, 0.2);
+    @include mobile {
+      text-align: center;
+      font-size: 14px;
+      line-height: 21rem;
+    }
   }
 }

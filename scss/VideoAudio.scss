@@ -3,6 +3,9 @@
     background-image: url("../img/promo-fone2.png");
     background-position: 569rem -62rem;
     background-size: 815rem 753rem;
+    &__breadcrumb {
+      display: block;
+    }
     &__top {
       justify-content: flex-start;
       &-heading {
@@ -22,9 +25,9 @@
       }
       &-block {
         display: none;
-        width: 100%;
         &--VideoAudio {
           display: flex;
+          width: 100%;
         }
       }
       &-item {
@@ -49,7 +52,7 @@
         font-size: 25rem;
         line-height: 30rem;
         top: 240rem;
-        right: 250px;
+        right: 250rem;
         left: auto;
         background: $blue2;
         transform: rotate(9deg);
@@ -88,15 +91,22 @@
   }
   &__showcase {
     margin-top: 21rem;
+    border-radius: 20rem;
     background: linear-gradient(180deg, #D9D9D9 81.53%, rgba(217, 217, 217, 0) 104.64%);
+    filter: drop-shadow(0rem -3rem 44rem rgba(0, 0, 0, 0.11));
     &-top {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       gap: 10rem 20rem;
     }
   }
+  &__shadow {
+    width: 100%;
+    margin-top: 22rem;
+    display: flex;
+    justify-content: center;
+  }
   &__btn {
-    margin: 22rem auto 0;
     background-color: transparent;
     border: none;
     outline: none;
@@ -106,7 +116,6 @@
     line-height: 31rem;
     text-decoration-line: underline;
     color: $white;
-    display: block;
     &-img {
       margin-left: 10rem;
       width: 12rem;
