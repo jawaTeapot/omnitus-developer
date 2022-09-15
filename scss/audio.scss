@@ -1,4 +1,4 @@
-.video {
+.audio {
   &__top {
     margin-top: 38rem;
     display: flex;
@@ -30,10 +30,10 @@
       line-height: 24rem;
       color: $white;
       padding: 10rem 7rem;
-      top: 1rem;
-      right: 100rem;
-      background: $orange2;
-      transform: rotate(25deg);
+      top: 42rem;
+      right: 7rem;
+      background: $yellow;
+      transform: rotate(-19deg);
     }
     &-right {
       margin-top: -26rem;
@@ -73,11 +73,11 @@
       padding: 10rem 7rem;
       bottom: 22rem;
       left: 29rem;
-      background: $blue2;
+      background: $red;
       transform: rotate(-3deg);
     }
   }
-  &__video {
+  &__audio {
     margin-top: 31rem;
     width: 100%;
     height: 589rem;
