@@ -52,8 +52,9 @@
     &-block {
       display: flex;
       align-items: center;
-      &--ideoAudio {
+      &--VideoAudio {
         display: none;
+        align-items: center;
       }
     }
     &-item {
