@@ -24,24 +24,26 @@ $(document).ready(function() {
             return $('#carousel').slick(settings);
         }
     });
-    const modalSettings = {
-        escapeClose: false,
-        clickClose: false,
-        showClose: false
-    }
-    $("#confirmation-modal").modal(modalSettings);
-
-    $('#confirm-btn').on('click', function () {
-        $.modal.close();
-    });
-
-    $('#non-confirm-btn').on('click', function () {
-        $.modal.close();
-        $('#waiver-modal').modal(modalSettings);
-    });
-
-    $('#back-btn').on('click', function () {
-        $.modal.close();
+    if ($.modal) {
+        const modalSettings = {
+            escapeClose: false,
+            clickClose: false,
+            showClose: false
+        }
         $("#confirmation-modal").modal(modalSettings);
-    });
+
+        $('#confirm-btn').on('click', function () {
+            $.modal.close();
+        });
+
+        $('#non-confirm-btn').on('click', function () {
+            $.modal.close();
+            $('#waiver-modal').modal(modalSettings);
+        });
+
+        $('#back-btn').on('click', function () {
+            $.modal.close();
+            $("#confirmation-modal").modal(modalSettings);
+        });
+    }
 });
