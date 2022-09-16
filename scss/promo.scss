@@ -15,6 +15,9 @@
     top: 0;
     left: 135rem;
     display: none;
+    @include mobile {
+      left: 24rem;
+    }
   }
   &__top {
     display: flex;
@@ -160,6 +163,12 @@
         height: 205rem;
         top: -134rem;
         left: 3px;
+        @include mobile {
+          width: 308rem;
+          height: 150rem;
+          top: -102rem;
+          left: -4px;
+        }
       }
     }
   }
@@ -234,6 +243,14 @@
       left: 188rem;
       background: $yellow;
       transform: rotate(-30deg);
+      @include mobile {
+        padding: 5rem 10rem;
+        font-size: 14rem;
+        line-height: 17rem;
+        top: 361rem;
+        left: 51rem;
+        transform: rotate(-12deg);
+      }
     }
     &-5 {
       display: none;
@@ -244,6 +261,14 @@
       left: 461rem;
       background: $orange2;
       transform: rotate(12deg);
+      @include mobile {
+        padding: 5rem 10rem;
+        font-size: 14rem;
+        line-height: 17rem;
+        top: 299rem;
+        left: 225rem;
+        transform: rotate(21deg);
+      }
     }
   }
   &__img {
@@ -251,14 +276,28 @@
     position: absolute;
     &-1 {
       width: 111rem;
+      height: 111rem;
       top: 123rem;
       right: 246rem;
+      @include mobile {
+        width: 64rem;
+        height: 64rem;
+        top: 71rem;
+        right: 65rem;
+      }
     }
     &-2 {
       width: 120rem;
       height: 120rem;
       bottom: 216rem;
       right: 306rem;
+      @include mobile {
+        width: 70rem;
+        height: 70rem;
+        top: 169rem;
+        bottom: auto;
+        right: 98rem;
+      }
     }
   }
 }

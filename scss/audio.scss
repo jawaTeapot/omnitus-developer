@@ -3,9 +3,15 @@
     margin-top: 38rem;
     display: flex;
     justify-content: space-between;
+    @include mobile {
+      flex-direction: column;
+    }
     &-left {
       width: 644rem;
       position: relative;
+      @include mobile {
+        width: 100%;
+      }
     }
     &-leftHeading {
       font-family: 'enthalpy298regular', sans-serif;
@@ -14,6 +20,10 @@
       line-height: 96rem;
       color: $white;
       text-shadow: 0 1rem 10rem rgba(115, 159, 187, 0.2);
+      @include mobile {
+        font-size: 94rem;
+        line-height: 71rem;
+      }
     }
     &-leftText {
       margin-top: -13rem;
@@ -22,6 +32,11 @@
       line-height: 54rem;
       color: $white;
       text-shadow: 0 1rem 10rem rgba(115, 159, 187, 0.2);
+      @include mobile {
+        margin-top: 12px;
+        font-size: 23rem;
+        line-height: 23rem;
+      }
     }
     &-leftSticker {
       position: absolute;
@@ -30,10 +45,18 @@
       line-height: 24rem;
       color: $white;
       padding: 10rem 7rem;
-      top: 42rem;
-      right: 7rem;
-      background: $yellow;
-      transform: rotate(-19deg);
+      top: 1rem;
+      right: 100rem;
+      background: $orange2;
+      transform: rotate(25deg);
+      @include mobile {
+        font-size: 14rem;
+        line-height: 17rem;
+        padding: 6rem 10rem;
+        top: 13rem;
+        right: -3rem;
+        transform: rotate(21deg);
+      }
     }
     &-right {
       margin-top: -26rem;
@@ -41,12 +64,19 @@
       display: flex;
       align-items: center;
       position: relative;
+      @include mobile {
+        margin-top: 32rem;
+      }
     }
     &-rightImg {
       margin-right: 34rem;
       width: 121rem;
       height: 121rem;
       border-radius: 50%;
+      @include mobile {
+        width: 75rem;
+        height: 75rem;
+      }
     }
     &-rightBlock {
       width: 237rem;
@@ -56,6 +86,10 @@
       font-size: 26rem;
       line-height: 31rem;
       color: $blue;
+      @include mobile {
+        font-size: 21rem;
+        line-height: 30rem;
+      }
     }
     &-rightText {
       margin-top: 1rem;
@@ -63,6 +97,11 @@
       font-size: 16rem;
       line-height: 24rem;
       color: $black;
+      @include mobile {
+        margin-top: 0;
+        font-size: 19rem;
+        line-height: 22rem;
+      }
     }
     &-rightSticker {
       position: absolute;
@@ -73,8 +112,16 @@
       padding: 10rem 7rem;
       bottom: 22rem;
       left: 29rem;
-      background: $red;
+      background: $blue2;
       transform: rotate(-3deg);
+      @include mobile {
+        font-size: 14rem;
+        line-height: 17rem;
+        padding: 5rem 7rem;
+        bottom: -9rem;
+        left: -2rem;
+        transform: rotate(-12deg);
+      }
     }
   }
   &__audio {
@@ -84,6 +131,12 @@
     padding: 20rem;
     background: $white;
     border-radius: 37rem;
+    @include mobile {
+      margin-top: 53rem;
+      padding: 4rem;
+      height: 206rem;
+      border-radius: 23rem;
+    }
   }
   &__heading {
     font-family: 'enthalpy298regular', sans-serif;
@@ -92,6 +145,11 @@
     font-size: 60rem;
     line-height: 72rem;
     color: $white;
+    @include mobile {
+      margin-top: 46rem;
+      font-size: 47rem;
+      line-height: 48rem;
+    }
   }
   &__headline {
     margin-top: 21rem;
@@ -99,12 +157,22 @@
     font-size: 26rem;
     line-height: 31rem;
     color: $blue;
+    @include mobile {
+      margin-top: 26rem;
+      font-size: 21rem;
+      line-height: 22rem;
+    }
   }
   &__textMini {
     font-weight: 400;
     font-size: 16rem;
     line-height: 24rem;
     color: $black;
+    @include mobile {
+      margin-top: 14rem;
+      font-size: 16rem;
+      line-height: 20rem;
+    }
   }
   &__text {
     margin-top: 40rem;
@@ -112,5 +180,10 @@
     font-size: 26rem;
     line-height: 31rem;
     color: $black;
+    @include mobile {
+      margin-top: 24rem;
+      font-size: 21rem;
+      line-height: 25rem;
+    }
   }
 }

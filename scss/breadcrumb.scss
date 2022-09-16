@@ -2,23 +2,37 @@
   margin-top: 20rem;
   display: flex;
   align-items: center;
+  @include mobile {
+    margin-top: 3rem;
+  }
   &__link {
     font-weight: 400;
     font-size: 16rem;
     line-height: 24rem;
     color: $blue;
+    @include mobile {
+      width: 100rem;
+      font-size: 10rem;
+      line-height: 24rem;
+    }
     &-active {
       font-weight: 700;
       font-size: 16rem;
       line-height: 24rem;
       color: $blue;
+      @include mobile {
+        font-size: 10rem;
+        line-height: 12rem;
+      }
     }
-    &::after {
+    &:after {
       margin-left: 12rem;
       margin-right: 10rem;
-      content: url(../img/arrow-right.svg);
-      width: 11rem;
-      height: 24rem;
+      content: ">";
+      @include mobile {
+        margin-left: 1rem;
+        margin-right: 1rem;
+      }
     }
     &:hover {
       color: #01447e;
