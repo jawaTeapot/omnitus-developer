@@ -101,6 +101,10 @@
       &--calculator {
         display: none;
       }
+      &-flex  {
+        display: flex;
+        align-items: center;
+      }
     }
     &-blockHeading {
       font-weight: 400;
