@@ -1,9 +1,20 @@
 .audio {
+  &__fone {
+    background-image: url("../img/audio-fone.png");
+    background-repeat: no-repeat;
+    background-size: 887rem 725rem;
+    background-position: 303rem 0rem;
+    @include mobile {
+      background-size: 500rem 435rem;
+      background-position: -70rem 0rem;
+    }
+  }
   &__top {
     margin-top: 38rem;
     display: flex;
     justify-content: space-between;
     @include mobile {
+      margin-top: 33rem;
       flex-direction: column;
     }
     &-left {
@@ -21,8 +32,8 @@
       color: $white;
       text-shadow: 0 1rem 10rem rgba(115, 159, 187, 0.2);
       @include mobile {
-        font-size: 94rem;
-        line-height: 71rem;
+        font-size: 88rem;
+        line-height: 70rem;
       }
     }
     &-leftText {
@@ -33,7 +44,7 @@
       color: $white;
       text-shadow: 0 1rem 10rem rgba(115, 159, 187, 0.2);
       @include mobile {
-        margin-top: 12px;
+        margin-top: 18px;
         font-size: 23rem;
         line-height: 23rem;
       }
@@ -45,16 +56,16 @@
       line-height: 24rem;
       color: $white;
       padding: 10rem 7rem;
-      top: 1rem;
-      right: 100rem;
-      background: $orange2;
-      transform: rotate(25deg);
+      top: 42rem;
+      right: 8rem;
+      background: #FF9C41;
+      transform: rotate(-20deg);
       @include mobile {
-        font-size: 14rem;
+        font-size: 15rem;
         line-height: 17rem;
-        padding: 6rem 10rem;
-        top: 13rem;
-        right: -3rem;
+        padding: 5rem 10rem;
+        top: 5rem;
+        right: 14rem;
         transform: rotate(21deg);
       }
     }

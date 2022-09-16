@@ -1,4 +1,14 @@
 .video {
+  &__fone {
+    background-image: url("../img/video-fone.png");
+    background-repeat: no-repeat;
+    background-size: 479rem 872rem;
+    background-position: 0rem -19rem;
+    @include mobile {
+      background-size: 300rem 552rem;
+      background-position: -87rem -25rem;
+    }
+  }
   &__top {
     margin-top: 38rem;
     display: flex;

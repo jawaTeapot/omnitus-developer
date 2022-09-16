@@ -1,14 +1,8 @@
 .promo {
   padding-top: 86rem;
-  background-image: url("../img/promo-fone.png");
-  background-repeat: no-repeat;
-  background-size: 939rem 749rem;
-  background-position: left;
   position: relative;
   @include mobile {
     padding-top: 301rem;
-    background-position: 8rem -46rem;
-    background-size: 480rem 385rem;
   }
   &__breadcrumb {
     position: absolute;
@@ -175,7 +169,7 @@
   &__sticker {
     position: absolute;
     font-weight: 700;
-    font-size: 25rem;
+    font-size: 24rem;
     line-height: 30rem;
     color: $white;
     @include mobile {
@@ -183,8 +177,8 @@
       line-height: 17rem;
     }
     &-1 {
-      padding: 15rem 15rem;
-      bottom: 198rem;
+      padding: 16rem 19rem;
+      bottom: 196rem;
       left: 127rem;
       background: $blue2;
       transform: rotate(-12deg);

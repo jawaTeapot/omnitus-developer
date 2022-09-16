@@ -1,12 +1,15 @@
 .VideoAudio {
-  .promo {
+  &__fone {
     background-image: url("../img/promo-fone2.png");
-    background-position: 569rem -62rem;
+    background-position: 569rem 0rem;
     background-size: 815rem 753rem;
     @include mobile {
-      background-position: -52rem -37rem;
-      background-size: 475rem 437rem;
+      background-position: -52rem 14rem;
+      background-size: 475rem 438rem;
     }
+  }
+  .promo {
+    padding-top: 92rem;
     &__breadcrumb {
       display: block;
     }
@@ -21,8 +24,12 @@
       &-text {
         display: none;
       }
+      @include mobile {
+        margin-top: 209rem;
+      }
     }
     &__plan {
+      margin-top: 94rem;
       padding-right: 55rem;
       @include mobile {
         margin-top: 82rem;
@@ -35,8 +42,10 @@
         display: none;
         &--VideoAudio {
           display: flex;
-          flex-direction: column;
           width: 100%;
+          @include mobile {
+            flex-direction: column;
+          }
         }
       }
       &-item {

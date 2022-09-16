@@ -60,6 +60,15 @@ body {
     color: $gray;
   }
 }
+.index__fone {
+  background-image: url("../img/promo-fone.png");
+  background-repeat: no-repeat;
+  background-size: 939rem 753rem;
+  background-position: 0 0;
+  @include mobile {
+    background-size: 480rem 390rem;
+  }
+}
 
 @import "header.scss";
 @import "promo.scss";
@@ -76,4 +85,4 @@ body {
 @import "video.scss";
 @import "audio.scss";
 @import "breadcrumb.scss";
-@import "interactive.scss";
+@import "calculator.scss";
