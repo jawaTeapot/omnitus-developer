@@ -132,3 +132,8 @@ body {
 @import "breadcrumb.scss";
 @import "calculator.scss";
 @import "individually.scss";
+
+.modal {
+  padding: 0 !important;
+  max-width: 1179rem !important;
+}

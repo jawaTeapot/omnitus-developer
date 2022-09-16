@@ -25,7 +25,7 @@ function buildFonts() {
 }
 
 function buildEjs() {
-    return gulp.src("./templates/*.*")
+    return gulp.src("./templates/**/*.*")
         .pipe(ejs({
             msg: "Hello Gulp!"
         }))
