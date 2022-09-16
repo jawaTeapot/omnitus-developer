@@ -37,6 +37,10 @@
       &--VideoAudio {
         display: none;
       }
+      &--calculator {
+        display: none;
+      }
+
     }
     &-text {
       width: 185rem;
@@ -94,6 +98,15 @@
         display: none;
         align-items: center;
       }
+      &--calculator {
+        display: none;
+      }
+    }
+    &-blockHeading {
+      font-weight: 400;
+      font-size: 16rem;
+      line-height: 21rem;
+      color: $black;
     }
     &-item {
       width: 276rem;
@@ -262,6 +275,18 @@
         top: 299rem;
         left: 225rem;
         transform: rotate(21deg);
+      }
+    }
+    &-6 {
+      display: none;
+      padding: 10rem 6rem;
+      font-size: 20rem;
+      line-height: 24rem;
+      top: -3rem;
+      right: 111rem;
+      background: $yellow;
+      transform: rotate(9deg);
+      @include mobile {
       }
     }
   }
