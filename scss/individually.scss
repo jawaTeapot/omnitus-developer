@@ -1,0 +1,152 @@
+.individually {
+  &__fone {
+    background-image: url("../img/individually-fone.png");
+    background-repeat: no-repeat;
+    background-size: 1311rem 1516rem;
+    background-position: 0rem 0rem;
+  }
+  .buttons__block {
+    display: flex;
+  }
+  .promo {
+    padding-top: 52rem;
+    &__top {
+      justify-content: space-between;
+      &-heading {
+        display: none;
+        &--individually {
+          display: block;
+        }
+      }
+      &-text {
+        display: none;
+        &--individually {
+          display: block;
+        }
+      }
+    }
+    &__sticker {
+      &-1 {
+        display: none;
+      }
+      &-2 {
+        display: block;
+        padding: 11rem 9rem;
+        font-size: 24rem;
+        top: 202rem;
+        left: 482rem;
+        transform: rotate(9deg);
+        background: $blue2;
+      }
+      &-3 {
+        top: 204rem;
+        left: -87rem;
+        transform: rotate(-18deg);
+      }
+      &-6 {
+        display: block;
+        top: 23rem;
+        right: 279rem;
+      }
+    }
+    .promo__plan {
+      margin-top: 36rem;
+      padding: 29rem 30rem 33rem 20rem;
+      align-items: flex-start;
+      &-heading {
+        display: none;
+        &--individually {
+          display: block;
+        }
+      }
+      &-block {
+        margin-top: 2rem;
+        &--calculator {
+          display: block;
+        }
+      }
+      &-item {
+        display: none;
+        &--calculator {
+          display: block;
+        }
+      }
+      &-img {
+        display: none;
+      }
+      &-btn {
+        align-self: flex-end;
+        margin-left: 42rem;
+      }
+    }
+  }
+}
+.calendar {
+  margin-top: 62rem;
+  &__top {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__heading {
+    font-family: 'enthalpy298regular', sans-serif;
+    font-weight: 400;
+    font-size: 60rem;
+    line-height: 72rem;
+    color: $white;
+  }
+  &__block {
+    display: flex;
+    align-items: center;
+  }
+  &__img {
+    margin-right: 15rem;
+    width: 85rem;
+    height: 115rem;
+  }
+  &__text {
+    width: 330rem;
+    font-weight: 400;
+    font-size: 18rem;
+    line-height: 22rem;
+    color: $red;
+    span {
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+  }
+  &__bottom {
+    margin-top: 28rem;
+  }
+  &__info {
+    margin-top: 20rem;
+    &-heading {
+      font-family: 'enthalpy298regular', sans-serif;
+      font-weight: 400;
+      font-size: 60rem;
+      line-height: 72rem;
+      color: $white;
+    }
+    &-block {
+      margin-top: 12rem;
+    }
+    &-text {
+      font-weight: 400;
+      font-size: 16rem;
+      line-height: 24rem;
+      color: $black;
+      span {
+        font-weight: 700;
+      }
+    }
+    .buttons__block {
+      margin-top: 66rem;
+      flex-direction: inherit;
+      &-btn {
+        margin-right: 20rem;
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}

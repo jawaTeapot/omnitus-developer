@@ -3,14 +3,24 @@
         <div class="promo__breadcrumb">
             <%- include('breadcrumb.ejs'); %>
         </div>
+        <div>
+        </div>
         <div class="promo__top">
-            <div class="promo__top-heading">Время<br>педиатра</div>
-            <div class="promo__top-heading promo__top-heading--VideoAudio">Видео<br>и Аудио</div>
-            <div class="promo__top-heading promo__top-heading--calculator">Интерактивные<br>калькуляторы</div>
-            <div class="promo__top-text">Вся самая актуальная информация на одном портале</div>
+            <div>
+                <div class="promo__top-heading">Время<br>педиатра</div>
+                <div class="promo__top-heading promo__top-heading--VideoAudio">Видео<br>и Аудио</div>
+                <div class="promo__top-heading promo__top-heading--calculator">Интерактивные<br>калькуляторы</div>
+                <div class="promo__top-heading promo__top-heading--individually">Индивидуальный календарь<br>прививок сформирован</div>
+                <div class="promo__top-heading promo__top-heading--announcement">АНОНС<br>МЕРОПРИЯТИЙ</div>
+                <div class="promo__top-text">Вся самая актуальная информация на одном портале</div>
+                <div class="promo__top-text--individually">Календарь прививок для детей<br>НЕ находящихся в группе риска</div>
+            </div>
+            <%- include('buttons.ejs'); %>
         </div>
         <div class="promo__plan">
             <div class="promo__plan-heading">Сформируйте <span>индивидуальный план<br>прививок</span> для вашего пациента</div>
+            <div class="promo__plan-heading promo__plan-heading--individually">Выбрать другую дату для <span>индивидуального плана прививок</span> вашего<br>пациента</div>
+            <div class="promo__plan-heading promo__plan-heading--individually">Выбрать другую дату для <span>индивидуального плана прививок</span> вашего<br>пациента</div>
             <div class="promo__plan-block">
                 <div class="promo__plan-item">
                     <input class="promo__plan-input input-primary" type="text" placeholder="Дата рождения">
@@ -20,36 +30,33 @@
                     <div class="promo__plan-block-flex">
                         <div class="promo__plan-item--calculator">
                             <select class="custom-select" name="state" data-placeholder="1">
-                                <option value="" disabled  selected>1</option>
+                                <option value="City01">1</option>
                                 <option value="City01">2</option>
                                 <option value="City02">3</option>
                                 <option value="City03">4</option>
                                 <option value="City04">5</option>
                                 <option value="City05">6</option>
                             </select>
-<!--                            <input class="promo__plan-input input-primary" type="text" placeholder="1">-->
                         </div>
                         <div class="promo__plan-item--calculator">
                             <select class="custom-select" name="state" data-placeholder="Январь">
-                                <option value="" disabled  selected>Январь</option>
+                                <option value="City01">Январь</option>
                                 <option value="City01">Февраль</option>
                                 <option value="City02">Март</option>
                                 <option value="City03">Апрель</option>
                                 <option value="City04">Май</option>
                                 <option value="City05">июнь</option>
                             </select>
-<!--                            <input class="promo__plan-input input-primary" type="text" placeholder="Январь">-->
                         </div>
                         <div class="promo__plan-item--calculator">
                             <select class="custom-select" name="state" data-placeholder="1995">
-                                <option value="" disabled  selected>1995</option>
+                                <option value="City01">1995</option>
                                 <option value="City01">1996</option>
                                 <option value="City02">1997</option>
                                 <option value="City03">1998</option>
                                 <option value="City04">1999</option>
                                 <option value="City05">2000</option>
                             </select>
-<!--                            <input class="promo__plan-input input-primary" type="text" placeholder="1995">-->
                         </div>
                     </div>
                 </div>
@@ -61,8 +68,29 @@
                 </div>
                 <button class="promo__plan-btn btn-primary">Поиск</button>
             </div>
+            <div class="promo__plan-block--announcement">
+                <div class="promo__plan-flex">
+                    <div class="promo__plan-blockHeading--announcement">Быстрый поиск</div>
+                    <div class="promo__plan-item--announcement">
+                        <select class="custom-select" name="state" data-placeholder="Все города">
+                            <option value="City01">Все города</option>
+                            <option value="City01">2</option>
+                            <option value="City02">3</option>
+                            <option value="City03">4</option>
+                            <option value="City04">5</option>
+                            <option value="City05">6</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="promo__switch">
+                    <div class="promo__switch-btn">Онлайн</div>
+                    <div class="promo__switch-btn promo__switch-btn--active">Оффлайн</div>
+                </div>
+                <button class="promo__plan-btn btn-primary">Показать</button>
+            </div>
             <img class="promo__plan-img" src="./img/iStock-3.png" alt="img">
             <img class="promo__plan-img promo__plan-img--VideoAudio" src="./img/iStock-11.png" alt="img">
+            <img class="promo__plan-img promo__plan-img--announcement" src="./img/iStock-4-1.png" alt="img">
         </div>
         <div class="promo__sticker promo__sticker-1">#Инновационно</div>
         <div class="promo__sticker promo__sticker-2">#Интересно</div>

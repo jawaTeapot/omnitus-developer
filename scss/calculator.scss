@@ -22,8 +22,12 @@
     &__plan {
       margin-top: 94rem;
       padding: 29rem 30rem 33rem 20rem;
-      &-block--calculator {
-        display: block;
+      align-items: flex-start;
+      &-block {
+        margin-top: 2rem;
+        &--calculator {
+          display: block;
+        }
       }
       &-item {
         display: none;
@@ -33,6 +37,10 @@
       }
       &-img {
         display: none;
+      }
+      &-btn {
+        align-self: flex-end;
+        margin-left: 42rem;
       }
     }
     &__sticker {
@@ -57,5 +65,8 @@
         display: block;
       }
     }
+  }
+  .subscription {
+    margin-top: 219rem;
   }
 }

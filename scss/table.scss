@@ -1,0 +1,103 @@
+.table {
+  padding: 30rem;
+  background: $white;
+  border-radius: 37rem;
+  &__top {
+    display: flex;
+    &-block {
+      padding-top: 1rem;
+      padding-left: 22rem;
+    }
+    &-header {
+      font-family: 'enthalpy298regular', sans-serif;
+      font-weight: 400;
+      font-size: 28rem;
+      line-height: 34rem;
+      letter-spacing: 0.05em;
+      color: $black;
+    }
+  }
+  &__bottom {
+    border-radius: 25rem;
+    &-top {
+      margin-top: 11rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-radius: 27rem;
+      padding: 8rem 8rem 5rem 20rem;
+    }
+    &-heading {
+      font-weight: 700;
+      font-size: 18rem;
+      line-height: 24rem;
+      color: $white;
+    }
+    &--gray {
+      background-color: $gray5;
+      .table__bottom-top {
+        background-color: $gray;
+      }
+      .table__item {
+        background-color: transparent;
+        &:nth-child(2n) {
+          background: $gray6;
+        }
+      }
+    }
+    &--orange {
+      background-color: $orange3;
+      .table__bottom-top {
+        background-color: $orange;
+      }
+      .table__item {
+        background-color: transparent;
+        &:nth-child(2n) {
+          background: $orange4;
+        }
+      }
+    }
+    &--blue {
+      background-color: $blue4;
+      .table__bottom-top {
+        background-color: $blue;
+      }
+      .table__item {
+        background-color: transparent;
+        &:nth-child(2n) {
+          background: $blue5;
+        }
+      }
+    }
+  }
+  &__item {
+    display: flex;
+    border-radius: 25px;
+    &-block {
+      margin-right: 122rem;
+      padding: 25rem 23rem;
+    }
+    &-headline {
+      font-weight: 700;
+      font-size: 18rem;
+      line-height: 24rem;
+      color: $black2;
+    }
+    &-text {
+      font-weight: 400;
+      font-size: 16rem;
+      line-height: 24rem;
+      color: $black2;
+    }
+  }
+  &__btn {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    &-img {
+      width: 39rem;
+      height: 39rem;
+    }
+  }
+}

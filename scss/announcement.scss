@@ -1,0 +1,66 @@
+.announcement {
+  &__fone {
+    background-image: url("../img/announcement-fone.png");
+    background-repeat: no-repeat;
+    background-size: 688rem 667rem;
+    background-position: 752rem 0rem;
+  }
+  .promo {
+    padding-top: 48rem;
+    &__top {
+      justify-content: flex-start;
+      &-heading {
+        display: none;
+        &--announcement {
+          display: block;
+        }
+      }
+      &-text {
+        display: none;
+      }
+    }
+    &__plan {
+      margin-top: 94rem;
+      &-heading {
+        display: none;
+      }
+      &-img {
+        display: none;
+        &--announcement {
+          display: block;
+        }
+      }
+      &-block {
+        display: none;
+        &--announcement {
+          display: flex;
+        }
+      }
+    }
+    &__sticker-1 {
+      padding: 7rem 4rem;
+      bottom: auto;
+      top: 117rem;
+      left: auto;
+      right: 281rem;
+      transform: rotate(-21deg);
+    }
+    &__sticker-2 {
+      padding: 10rem 9rem;
+      font-size: 19rem;
+      top: 22rem;
+      left: 551rem;
+    }
+    &__sticker-3 {
+      top: 282rem;
+      left: -24rem;
+      transform: rotate(-18deg);
+    }
+  }
+  &__showcase {
+    margin-top: 60rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20rem;
+  }
+}

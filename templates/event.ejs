@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang=ru>
+<%- include('head.ejs'); %>
+<body>
+<%- include('header.ejs'); %>
+<main class="container">
+    <%- include('breadcrumb.ejs'); %>
+    <section class="event">
+        <div class="event__top">
+            <div class="event__left">
+                <div class="event__left-heading">Сухой кашель:</div>
+                <div class="event__left-headline">очевидные и неочевидные причины</div>
+                <div class="event__left-block">
+                    <img class="event__left-img" src="./img/iStock-12-1.png" alt="img">
+                    <div class="event__left-text">Москва, Чистопрудный бульвар, м.Чистые Пруды</div>
+                </div>
+                <div class="event__left-sticker">#Оффлайн</div>
+            </div>
+            <div class="event__right">
+                <div class="event__right-block">
+                    <div class="event__right-heading">5 мая</div>
+                    <div class="event__right-heading">11:00</div>
+                </div>
+                <div class="event__right-text">Четверг</div>
+                <button class="event__right-btn btn-primary">Перейти на сайт мероприятия</button>
+                <div class="event__right-sticker">#Приходите</div>
+            </div>
+        </div>
+        <div class="event__speakers">
+            <div class="event__speakers-heading">Спикеры</div>
+            <div class="event__speakers-item">
+                <img class="event__speakers-ava" src="./img/ava-2.png" alt="img">
+                <div class="event__speakers-block">
+                    <div class="event__speakers-headline">Фамилия Имя Отчество</div>
+                    <div class="event__speakers-text">д.м.н., профессор, заслуженный врач РФ, заведующий кафедрой поликлинической и неотложной педиатрии, руководитель научно-образовательного инновационного центра «Неотложные состояния в педиатрии» РНИМУ им Н. А. Пирогова, научный руководитель Детского медицинского центра, главный внештатный консультант по педиатрии ГМУ Управления Делами Президента РФ</div>
+                </div>
+            </div>
+            <div class="event__speakers-item">
+                <img class="event__speakers-ava" src="./img/ava-2.png" alt="img">
+                <div class="event__speakers-block">
+                    <div class="event__speakers-headline">Фамилия Имя Отчество</div>
+                    <div class="event__speakers-text">д.м.н., профессор, заслуженный врач РФ, заведующий кафедрой поликлинической и неотложной педиатрии, руководитель научно-образовательного инновационного центра «Неотложные состояния в педиатрии» РНИМУ им Н. А. Пирогова, научный руководитель Детского медицинского центра, главный внештатный консультант по педиатрии ГМУ Управления Делами Президента РФ</div>
+                </div>
+            </div>
+            <div class="event__speakers-item">
+                <img class="event__speakers-ava" src="./img/ava-2.png" alt="img">
+                <div class="event__speakers-block">
+                    <div class="event__speakers-headline">Фамилия Имя Отчество</div>
+                    <div class="event__speakers-text">д.м.н., профессор, заслуженный врач РФ, заведующий кафедрой поликлинической и неотложной педиатрии, руководитель научно-образовательного инновационного центра «Неотложные состояния в педиатрии» РНИМУ им Н. А. Пирогова, научный руководитель Детского медицинского центра, главный внештатный консультант по педиатрии ГМУ Управления Делами Президента РФ</div>
+                </div>
+            </div>
+            <img class="event__speakers-img" src="./img/iStock-14.png" alt="img">
+        </div>
+        <div class="event__info">
+            <div class="event__info-heading">Информация о МЕРОПРИЯТИИ</div>
+            <div class="event__info-text">
+                Богемная, вечно не спящая Покровка! Предлагаем пройтись вдоль неё по тайной тропинке, скрытой от посторонних глаз. Вы прогуляетесь по тихим московским дворикам, куда редко забредают туристы, и увидите настоящую заповедную Москву, оставаясь при этом в центре. Пикантности добавит интересный квест средней сложности. Стартуем от знаменитых Чистых прудов с их привлекательными окрестностями!
+                <br><br>
+                <span>Ведь гораздо интереснее не просто бесцельно бродить, а отгадывать загадки, правда? А ответить вам придётся на множество вопросов…</span>
+            </div>
+        </div>
+        <div class="event__nav">
+            <div class="event__nav-heading">место проведения</div>
+            <div class="event__nav-block">
+                <img src="./img/event-map.png" alt="img">
+            </div>
+            <button class="event__nav-btn btn-primary">Перейти на сайт мероприятия</button>
+        </div>
+    </section>
+    <%- include('subscription.ejs'); %>
+    <%- include('info.ejs'); %>
+</main>
+<%- include('footer.ejs'); %>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+<script type="text/javascript" src="./js/main.js"></script>
+</body>
+</html>

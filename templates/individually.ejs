@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang=ru>
+<%- include('head.ejs'); %>
+<body class="individually__fone">
+<%- include('header.ejs'); %>
+<main class="individually container">
+    <%- include('breadcrumb.ejs'); %>
+    <%- include('promo.ejs'); %>
+    <section class="calendar">
+        <div class="calendar__top">
+            <div class="calendar__heading">Индивидуальный календарь<br>прививок пациента:</div>
+            <div class="calendar__block">
+                <img class="calendar__img" src="./img/iStock-12.png" alt="img">
+                <div class="calendar__text">
+                    <span>ВНИМАНИЕ!</span><br>
+                    В случае пропуска плановой прививки, в любое время, обратитесь к Вашему лечащему врачу за консультацией.
+                </div>
+            </div>
+        </div>
+        <div class="calendar__bottom">
+            <%- include('table.ejs'); %>
+        </div>
+        <div class="calendar__info">
+            <div class="calendar__info-heading">Дополнительные прививки:</div>
+            <div class="calendar__info-block">
+                <div class="calendar__info-text"><span>Грипп:</span> ежегодно, начиная с 6 месяца жизни</div>
+                <div class="calendar__info-text"><span>Коронавирусная инфекция, вызванная SARS-CoV-2:</span> с приоритетом уязвимых лиц тяжелого течения коронавирусной инфекции. Вакцинация проводится при наличии письменного согласия одного из родителей с последующим оформлением информированного >добровольного согласия.<br>
+                    *прививки по эпидемическим показаниям</div>
+            </div>
+            <%- include('buttons.ejs'); %>
+        </div>
+    </section>
+    <%- include('subscription.ejs'); %>
+    <%- include('info.ejs'); %>
+</main>
+<%- include('footer.ejs'); %>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+<script type="text/javascript" src="./js/main.js"></script>
+</body>
+</html>

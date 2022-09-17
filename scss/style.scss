@@ -9,13 +9,19 @@ $gray: #A3A3A3;
 $gray2: #DDDDDD;
 $gray3: #C4C4C4;
 $gray4: #D7D7D7;
+$gray5: #EFEFEF;
+$gray6: #E6E6E6;
 $white: #FFFFFF;
 $blue: #316DB5;
 $blue2: #4698F8;
 $blue3: #D0E9EE;
+$blue4: #D1DFF0;
+$blue5: #C2D0E1;
 $yellow: #FFCC68;
 $orange: #E8742F;
 $orange2: #FF9C41;
+$orange3: #FFEBDF;
+$orange4: #F2D6C6;
 $red: #E2001A;
 
 html {
@@ -82,8 +88,8 @@ body {
   width: 100%;
   font-weight: 400;
   font-size: 16rem;
-  line-height: 19rem;
-  color: #333333;
+  line-height: 21rem;
+  color: $black;
 }
 .select2-selection__rendered {
   font-size: 16rem;
@@ -92,33 +98,42 @@ body {
 .select2-results__option {
   font-size: 16rem;
   font-weight: 400;
-  line-height: 19rem;
-}
-.select2-dropdown {
-  padding: 10rem;
+  line-height: 21rem;
+  color: $gray;
 }
 .select2-results__options {
-  padding: 2rem !important;
-  max-height: 151rem;
-  overflow-y: scroll;
+  padding: 7rem 0 0;
+  max-height: 159rem !important;
   @include scrollbar();
 }
 .select2-container--default .select2-selection--single {
-  background-color: transparent !important;
   border: none !important;
-  border-radius: 0 !important;
 }
 .select2-dropdown {
-  border: none !important;
-  box-shadow: 0 2rem 34rem -5rem rgba(0, 0, 0, 0.14);
-  border-radius: 0 0 12rem 12rem !important;
+  padding: 20rem 5rem !important;
+  border: 1rem solid #D2CAD2 !important;
+  border-top: none !important;
+  border-radius: 0 0 32rem 32rem !important;
+}
+//.select2-dropdown .select2-dropdown--below {
+//  width: 146px;
+//}
 
+.select2-container--default .select2-results__option--highlighted.select2-results__option--selectable {
+  background-color: transparent !important;
+  color: $black !important;
+  font-weight: 700;
 }
 .select2-container .select2-selection--single .select2-selection__rendered {
-  padding-left: 0 !important;
+  //padding-left: 0 !important;
 }
 .select2-container--open .select2-dropdown {
-  top: 9rem !important;
+  //top: -7rem !important;
+  //width: 160rem !important;
+  //left: -14rem !important;
+}
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+  right: 23rem;
 }
 
 @import "header.scss";
@@ -138,6 +153,12 @@ body {
 @import "breadcrumb.scss";
 @import "calculator.scss";
 @import "individually.scss";
+@import "buttons.scss";
+@import "table.scss";
+@import "announcement.scss";
+@import "cardVebinar.scss";
+@import "event.scss";
+@import "recommendations.scss";
 
 .modal {
   padding: 0 !important;
