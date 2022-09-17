@@ -126,6 +126,18 @@
         width: 293rem;
         height: 75rem;
       }
+      &--calculator {
+        height: 64rem;
+        padding: 21rem 22rem;
+        background-color: $white;
+        border: 1rem solid $gray2;
+        border-radius: 120rem;
+        margin-top: 6rem;
+        margin-right: 18rem;
+        &:last-child {
+          margin-right: 0;
+        }
+      }
     }
     &-input {
       width: 100%;
