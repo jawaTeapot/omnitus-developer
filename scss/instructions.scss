@@ -1,0 +1,58 @@
+.instructions {
+  &__fone {
+    background-image: url("../img/instructions-fone.png");
+    background-repeat: no-repeat;
+    background-size: 788rem 678rem;
+    background-position: 652rem 43rem;
+  }
+  .promo {
+    &__breadcrumb {
+      display: block;
+    }
+    &__top {
+      margin-top: 65rem;
+      justify-content: flex-start;
+      &-heading {
+        display: none;
+        &--instructions {
+          display: block;
+        }
+      }
+      &-text {
+        display: none;
+      }
+    }
+    &__plan {
+      display: none;
+    }
+    &__sticker {
+      &-1 {
+        display: none;
+      }
+      &-2 {
+        display: none;
+      }
+      &-3 {
+        display: none;
+      }
+      &-7 {
+        display: block;
+        top: 254rem;
+        right: 781rem;
+        background: $yellow;
+        transform: rotate(-12deg);
+      }
+      &-8 {
+        display: block;
+      }
+    }
+  }
+  &__showcase {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__card {
+    background: $white;
+    border-radius: 37rem;
+  }
+}

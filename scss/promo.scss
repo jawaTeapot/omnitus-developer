@@ -49,6 +49,12 @@
       &--announcement {
         display: none;
       }
+      &--recommendations {
+        display: none;
+      }
+      &--instructions {
+        display: none;
+      }
     }
     &-text {
       width: 185rem;
@@ -129,6 +135,9 @@
         width: 100%;
         display: none;
         align-items: flex-end;
+      }
+      &--recommendations  {
+        display: none;
       }
     }
     &-flex {
@@ -384,6 +393,30 @@
       right: 111rem;
       background: $yellow;
       transform: rotate(9deg);
+      @include mobile {
+      }
+    }
+    &-7 {
+      display: none;
+      padding: 10rem 6rem;
+      font-size: 20rem;
+      line-height: 24rem;
+      top: 77rem;
+      right: 473rem;
+      background: $orange2;
+      transform: rotate(12deg);
+      @include mobile {
+      }
+    }
+    &-8 {
+      display: none;
+      padding: 10rem 9rem;
+      font-size: 20rem;
+      line-height: 24rem;
+      top: 124rem;
+      left: 223rem;
+      background: $orange2;
+      transform: rotate(13deg);
       @include mobile {
       }
     }

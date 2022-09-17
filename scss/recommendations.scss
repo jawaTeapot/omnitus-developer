@@ -1,5 +1,120 @@
 .recommendations {
-  .promo__breadcrumb {
-    display: block;
+  background-image: url("../img/recommendations-fone.png");
+  background-position: 687rem -49rem;
+  background-size: 753rem 740rem;
+  .promo {
+    &__breadcrumb {
+      display: block;
+    }
+    &__top {
+      margin-top: 6rem;
+      justify-content: flex-start;
+      &-heading {
+        display: none;
+        &--recommendations {
+          display: block;
+        }
+      }
+      &-text {
+        display: none;
+      }
+    }
+    &__sticker {
+      &-1 {
+        display: none;
+      }
+      &-2 {
+        padding: 11rem 7rem;
+        font-size: 24rem;
+        top: 361rem;
+        left: 923rem;
+        background-color: $blue2;
+      }
+      &-3 {
+        display: none;
+      }
+      &-6 {
+        display: block;
+        top: 351rem;
+        right: auto;
+        left: 85rem;
+        transform: rotate(-12deg);
+      }
+      &-7 {
+        display: block;
+      }
+    }
+    &__plan {
+      margin-top: 94rem;
+      &-heading {
+        display: none;
+      }
+      &-block {
+        display: none;
+        &--recommendations {
+          display: flex;
+          width: 100%;
+        }
+      }
+      &-item {
+        width: 100%;
+      }
+      &-img {
+        display: none;
+      }
+    }
+  }
+  &__block {
+    margin-top: 66rem;
+    border-radius: 37rem;
+  }
+  &__accordion {
+    padding: 42rem 55rem 50rem 30rem;
+    background-color: $white;
+    border-radius: 37rem;
+    &-item {
+      margin-bottom: 15rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 7rem 0 17rem 30rem;
+      border-bottom: 1rem solid $gray;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+    &-heading {
+      font-weight: 400;
+      font-size: 26rem;
+      line-height: 31rem;
+      color: $black;
+    }
+    &-btn {
+      width: 55rem;
+      height: 55rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+    }
+    &-button {
+      display: flex;
+      align-items: center;
+      margin: 20rem auto 0;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      background-color: transparent;
+      font-weight: 400;
+      font-size: 26rem;
+      line-height: 31rem;
+      text-decoration-line: underline;
+      color: $white;
+    }
+    &-img {
+      margin-left: 33rem;
+      width: 12rem;
+      height: 13rem;
+    }
   }
 }
