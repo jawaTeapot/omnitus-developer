@@ -48,6 +48,13 @@
       left: auto;
       background: $blue2;
       transform: rotate(9deg);
+        @include mobile {
+          padding: 5rem 10rem;
+          font-size: 15rem;
+          top: 254rem;
+          right: 43rem;
+          transform: rotate(-13deg);
+        }
     }
       &-3 {
         display: none;
@@ -58,11 +65,25 @@
         left: 85rem;
         right: auto;
         transform: rotate(-12deg);
+        @include mobile {
+          padding: 2rem 4rem;
+          font-size: 16rem;
+          top: 114rem;
+          left: 22rem;
+          transform: rotate(21deg);
+        }
       }
       &-7 {
         display: block;
         top: 77rem;
         right: 629rem;
+        @include mobile {
+          top: 47rem;
+          right: 45rem;
+          padding: 2rem 1rem;
+          font-size: 16rem;
+          transform: rotate(-11deg);
+        }
       }
     }
   }
