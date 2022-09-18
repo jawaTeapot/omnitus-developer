@@ -4,9 +4,16 @@
     background-repeat: no-repeat;
     background-size: 677rem 710rem;
     background-position: 763rem 43rem;
+    @include mobile {
+      background-size: 366rem 383rem;
+      background-position: -1rem 50rem;
+    }
   }
   .promo {
     padding-top: 48rem;
+    @include mobile {
+      padding-top: 253rem;
+    }
     &__top {
       justify-content: flex-start;
       &-heading {
@@ -23,10 +30,32 @@
       margin-top: 94rem;
       padding: 29rem 30rem 33rem 20rem;
       align-items: flex-start;
+      @include mobile {
+        padding: 30rem 17rem;
+        margin-top: 27rem;
+      }
       &-block {
         margin-top: 2rem;
+        @include mobile {
+          width: 100%;
+        }
         &--calculator {
           display: block;
+          @include mobile {
+            width: 100%;
+          }
+        }
+        &-flex {
+          @include mobile {
+           flex-direction: column;
+            width: 100%;
+          }
+        }
+      }
+      &-blockHeading {
+        @include mobile {
+          margin-top: 11rem;
+          font-size: 19rem;
         }
       }
       &-item {
@@ -52,21 +81,47 @@
         padding: 11rem 9rem;
         font-size: 24rem;
         top: 317rem;
+        right: auto;
         left: -24rem;
         transform: rotate(9deg);
         background: $blue2;
+        @include mobile {
+          padding: 5rem 2rem;
+          font-size: 15rem;
+          top: 205rem;
+          left: -5rem;
+          transform: rotate(21deg);
+        }
       }
       &-3 {
         top: 168rem;
         left: 437rem;
         transform: rotate(-18deg);
+        @include mobile {
+          font-size: 13px;
+          padding: 5rem 6rem;
+          top: 223rem;
+          right: 6rem;
+          left: auto;
+          transform: rotate(21deg);
+        }
       }
       &-6 {
         display: block;
+        @include mobile {
+          padding: 2rem 1rem;
+          font-size: 16rem;
+          top: 13rem;
+          right: 187rem;
+          transform: rotate(-24deg);
+        }
       }
     }
   }
   .subscription {
     margin-top: 219rem;
+    @include mobile {
+      margin-top: 68rem;
+    }
   }
 }

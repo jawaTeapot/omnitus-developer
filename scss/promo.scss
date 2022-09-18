@@ -39,6 +39,11 @@
       }
       &--calculator {
         display: none;
+        @include mobile {
+          margin-right: 0;
+          font-size: 50px;
+          line-height: 48rem;
+        }
       }
       &--individually {
         margin-right: 0;
@@ -182,15 +187,30 @@
         margin-top: 6rem;
         margin-right: 18rem;
         z-index: 9999;
+        @include mobile {
+          margin-top: 20rem;
+        }
         &:nth-child(1) {
           width: 105rem;
+          @include mobile {
+            width: 100%;
+            margin-right: 0;
+          }
         }
         &:nth-child(2) {
           width: 160rem;
+          @include mobile {
+            width: 100%;
+            margin-right: 0;
+          }
         }
         &:nth-child(3) {
           width: 140rem;
           margin-right: 0;
+          @include mobile {
+            width: 100%;
+            margin-right: 0;
+          }
         }
       }
       &--announcement {

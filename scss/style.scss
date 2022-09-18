@@ -38,6 +38,7 @@ body {
 .container {
   width: 100%;
   max-width: 1170rem;
+
   margin: 0 auto;
   @include mobile {
     max-width: 327rem;
