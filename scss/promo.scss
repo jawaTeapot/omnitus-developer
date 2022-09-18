@@ -162,6 +162,10 @@
         font-size: 26rem;
         line-height: 31rem;
         color: $black;
+        @include mobile {
+          font-size: 19rem;
+          line-height: 19rem;
+        }
       }
     }
     &-item {

@@ -4,15 +4,26 @@
     background-repeat: no-repeat;
     background-size: 688rem 667rem;
     background-position: 752rem 0rem;
+    @include mobile {
+      background-size: 425rem 409rem;
+      background-position: -34rem 27rem;
+    }
   }
   .promo {
     padding-top: 48rem;
+    @include mobile {
+      padding-top: 250rem;
+    }
     &__top {
       justify-content: flex-start;
       &-heading {
         display: none;
         &--announcement {
           display: block;
+          @include mobile {
+            font-size: 55px;
+            line-height: 52rem;
+          }
         }
       }
       &-text {
@@ -21,6 +32,10 @@
     }
     &__plan {
       margin-top: 94rem;
+      @include mobile {
+        padding: 29rem 16rem;
+        margin-top: 27rem;
+      }
       &-heading {
         display: none;
       }
@@ -34,7 +49,32 @@
         display: none;
         &--announcement {
           display: flex;
+          @include mobile {
+            align-items: center;
+            flex-direction: column;
+          }
         }
+      }
+      &-flex {
+        @include mobile {
+          width: 100%;
+          margin-right: 0;
+        }
+      }
+      &-item {
+        &--announcement {
+          @include mobile {
+            width: 100%;
+          }
+        }
+      }
+    }
+    &__switch {
+      @include mobile {
+        width: 100%;
+        margin-top: 17rem;
+        margin-right: 0;
+        justify-content: space-between;
       }
     }
     &__sticker-1 {
@@ -44,17 +84,40 @@
       left: auto;
       right: 281rem;
       transform: rotate(-21deg);
+      @include mobile {
+        font-size: 15rem;
+        padding: 5rem 6rem;
+        top: 13rem;
+        right: 188rem;
+        transform: rotate(-24deg);
+      }
     }
     &__sticker-2 {
       padding: 10rem 9rem;
       font-size: 19rem;
       top: 22rem;
       left: 551rem;
+      @include mobile {
+        padding: 5rem 3rem;
+        font-size: 15rem;
+        top: 197rem;
+        left: -7rem;
+        right: auto;
+        transform: rotate(21deg);
+      }
     }
     &__sticker-3 {
       top: 282rem;
       left: -24rem;
       transform: rotate(-18deg);
+      @include mobile {
+        font-size: 13px;
+        padding: 5rem 7rem;
+        top: 53rem;
+        left: auto;
+        right: 25rem;
+        transform: rotate(21deg);
+      }
     }
   }
   &__showcase {
@@ -62,5 +125,10 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20rem;
+    @include mobile {
+      margin-top: 47rem;
+      grid-template-columns: 1fr;
+      gap: 11rem;
+    }
   }
 }

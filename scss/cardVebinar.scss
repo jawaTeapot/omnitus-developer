@@ -1,8 +1,11 @@
 .cardVebinar {
   display: flex;
   width: 574rem;
-  height: 229rem;
+  min-height: 229rem;
   border-radius: 20rem;
+  @include mobile {
+    width: 329rem;
+  }
   &__left {
     padding: 0 36rem;
     border-radius: 20rem 0 0 20rem;
@@ -12,39 +15,62 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    @include mobile {
+      padding: 0 20rem;
+    }
     &-block {
       width: 128rem;
-      height: 102px;
+      height: 102rem;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
       background: rgba(255, 255, 255, 0.39);
       backdrop-filter: blur(2rem);
+      @include mobile {
+        width: 87rem;
+        height: 87rem;
+      }
     }
     &-data {
       font-weight: 700;
       font-size: 26rem;
       line-height: 31rem;
       color: $white;
+      @include mobile {
+        margin-bottom: 5rem;
+        font-size: 23rem;
+        line-height: 40rem;
+      }
     }
     &-time {
       font-weight: 400;
       font-size: 26rem;
       line-height: 31rem;
       color: $white;
+      @include mobile {
+        font-size: 23rem;
+        line-height: 24rem;
+      }
     }
   }
   &__right {
     border-radius: 0 20rem 20rem 0;
     padding: 30rem 20rem;
     background-color: $white;
+    @include mobile {
+      padding: 30rem 12rem 34rem;
+    }
     &-headline {
       font-weight: 700;
       font-size: 10rem;
       line-height: 10rem;
       text-transform: uppercase;
       color: $red;
+      @include mobile {
+        font-size: 12rem;
+        line-height: 9rem;
+      }
     }
     &-heading {
       margin-top: 5rem;
@@ -52,6 +78,11 @@
       font-size: 18rem;
       line-height: 24rem;
       color: $black;
+      @include mobile {
+        margin-top: 7rem;
+        font-size: 19rem;
+        line-height: 22rem;
+      }
     }
     &-text {
       margin-top: 9rem;
@@ -59,6 +90,11 @@
       font-size: 16rem;
       line-height: 24rem;
       color: $gray;
+      @include mobile {
+        margin-top: 3rem;
+        font-size: 14rem;
+        line-height: 16rem;
+      }
     }
   }
 }

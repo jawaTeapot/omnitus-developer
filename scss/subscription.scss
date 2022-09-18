@@ -98,7 +98,10 @@
     top: -169rem;
     left: -135rem;
     @include mobile {
-    display: none;
+      width: 234rem;
+      height: 413rem;
+      top: -93rem;
+      left: -87rem;
     }
   }
 }

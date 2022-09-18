@@ -4,24 +4,47 @@
     background-repeat: no-repeat;
     background-size: 1311rem 1516rem;
     background-position: 0rem 0rem;
+    @include mobile {
+      background-image: none;
+    }
   }
   .buttons__block {
     display: flex;
+    @include mobile {
+      margin-right: 0;
+      margin-top: 26rem;
+      width: 100%;
+    }
+    &-btn {
+      width: 100%;
+    }
   }
   .promo {
     padding-top: 52rem;
+    @include mobile {
+      padding-top: 11rem;
+    }
     &__top {
       justify-content: space-between;
       &-heading {
         display: none;
         &--individually {
           display: block;
+          @include mobile {
+            font-size: 47rem;
+            line-height: 47rem;
+          }
         }
       }
       &-text {
         display: none;
         &--individually {
           display: block;
+          @include mobile {
+            margin-top: 4rem;
+            font-size: 19rem;
+            line-height: 18rem;
+          }
         }
       }
     }
@@ -37,16 +60,35 @@
         left: 482rem;
         transform: rotate(9deg);
         background: $blue2;
+        @include mobile {
+          font-size: 13px;
+          padding: 5rem 2rem;
+          left: auto;
+          right: 2rem;
+          top: 139rem;
+          transform: rotate(21deg);
+        }
       }
       &-3 {
         top: 204rem;
         left: -87rem;
         transform: rotate(-18deg);
+        @include mobile {
+          font-size: 13px;
+          padding: 5rem 7rem;
+          left: auto;
+          top: 45rem;
+          right: 0;
+          transform: rotate(-8deg);
+        }
       }
       &-6 {
         display: block;
         top: 23rem;
         right: 279rem;
+        @include mobile {
+        display: none;
+        }
       }
     }
     .promo__plan {
@@ -61,8 +103,25 @@
       }
       &-block {
         margin-top: 2rem;
+        @include mobile {
+          width: 100%;
+        }
         &--calculator {
           display: block;
+          @include mobile {
+            width: 100%;
+          }
+        }
+        &-flex {
+          @include mobile {
+            flex-direction: column;
+          }
+        }
+      }
+      &-blockHeading {
+        @include mobile {
+          margin-top: 18rem;
+          font-size: 18rem;
         }
       }
       &-item {
@@ -83,25 +142,47 @@
 }
 .calendar {
   margin-top: 62rem;
+  @include mobile {
+    margin-top: 48rem;
+  }
   &__top {
     display: flex;
     justify-content: space-between;
+    @include mobile {
+     flex-direction: column;
+    }
   }
   &__heading {
+    width: 628rem;
     font-family: 'enthalpy298regular', sans-serif;
     font-weight: 400;
     font-size: 60rem;
     line-height: 72rem;
     color: $white;
+    @include mobile {
+      width: auto;
+      font-size: 41rem;
+      line-height: 45rem;
+    }
   }
   &__block {
     display: flex;
     align-items: center;
+    @include mobile {
+      margin-top: 24rem;
+    }
   }
   &__img {
     margin-right: 15rem;
     width: 85rem;
     height: 115rem;
+    @include mobile {
+      align-self: flex-start;
+      margin-left: -12rem;
+      margin-right: 13rem;
+      width: 50rem;
+      height: 70rem;
+    }
   }
   &__text {
     width: 330rem;
@@ -113,18 +194,31 @@
       font-weight: 700;
       text-transform: uppercase;
     }
+    @include mobile {
+      width: auto;
+      font-size: 16rem;
+      line-height: 20rem;
+    }
   }
   &__bottom {
     margin-top: 28rem;
+    width: 600rem;
   }
   &__info {
     margin-top: 20rem;
+    @include mobile {
+      margin-top: 44rem;
+    }
     &-heading {
       font-family: 'enthalpy298regular', sans-serif;
       font-weight: 400;
       font-size: 60rem;
       line-height: 72rem;
       color: $white;
+      @include mobile {
+        font-size: 47rem;
+        line-height: 52rem;
+      }
     }
     &-block {
       margin-top: 12rem;
@@ -137,15 +231,23 @@
       span {
         font-weight: 700;
       }
+      @include mobile {
+        font-size: 16rem;
+        line-height: 20rem;
+      }
     }
     .buttons__block {
-      margin-top: 66rem;
+      margin-top: 47rem;
       flex-direction: inherit;
       &-btn {
         margin-right: 20rem;
         &:last-child {
           margin-right: 0;
         }
+      }
+      @include mobile {
+        margin-top: 40rem;
+        flex-direction: column;
       }
     }
   }

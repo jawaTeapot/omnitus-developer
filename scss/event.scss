@@ -1,8 +1,14 @@
 .event {
   margin-top: 51rem;
+  @include mobile {
+    margin-top: 31rem;
+  }
   &__top {
     display: flex;
     justify-content: space-between;
+    @include mobile {
+      flex-direction: column;
+    }
   }
   &__left {
     position: relative;
@@ -13,6 +19,10 @@
       line-height: 70rem;
       color: $white;
       text-shadow: 0 1rem 10rem rgba(115, 159, 187, 0.2);
+      @include mobile {
+        font-size: 80px;
+        line-height: 76rem;
+      }
     }
     &-headline {
       font-weight: 400;
@@ -20,6 +30,11 @@
       line-height: 54rem;
       color: $white;
       text-shadow: 0 1rem 10rem rgba(115, 159, 187, 0.2);
+      @include mobile {
+        margin-top: 9rem;
+        font-size: 20px;
+        line-height: 24rem;
+      }
     }
     &-block {
       margin-top: 20rem;
