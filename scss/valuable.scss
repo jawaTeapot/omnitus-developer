@@ -3,6 +3,10 @@
   background-repeat: no-repeat;
   background-size: 1109rem 732rem;
   background-position: 331rem -62rem;
+  @include mobile {
+    background-size: 781rem 514rem;
+    background-position: -117rem -78rem;
+  }
   .promo {
     padding-top: 27rem;
     &__breadcrumb {
@@ -11,11 +15,17 @@
     &__top {
       margin-top: 65rem;
       justify-content: flex-start;
-
+      @include mobile {
+        margin-top: 274rem;
+      }
       &-heading {
         display: none;
         &--valuable {
           display: block;
+          @include mobile {
+            font-size: 70rem;
+            line-height: 57rem;
+          }
         }
       }
 
@@ -58,6 +68,9 @@
   }
   &__showcase {
     margin-top: 94rem;
+    @include mobile {
+      margin-top: 21rem;
+    }
   }
   &__item {
     margin-bottom: 20rem;
@@ -65,6 +78,11 @@
     background: $white;
     border-radius: 20rem;
     display: flex;
+    @include mobile {
+      margin-bottom: 11px;
+      flex-direction: column;
+      border-radius: 5rem;
+    }
     &:last-child {
       margin-bottom: 0;
     }
@@ -75,11 +93,19 @@
       background-size: cover;
       width: 199rem;
       height: 152rem;
+      @include mobile {
+        width: 100%;
+        height: 71rem;
+        border-radius: 5rem 5rem 0 0;
+      }
     }
     &-right {
       padding: 30rem 50rem 30rem 20rem;
       display: flex;
       align-items: center;
+      @include mobile {
+        padding: 15rem 15rem 20rem;
+      }
     }
     &-block {
       width: 749rem;
@@ -90,6 +116,10 @@
       line-height: 10rem;
       text-transform: uppercase;
       color: $red;
+      @include mobile {
+        font-size: 12rem;
+        line-height: 12rem;
+      }
     }
     &-heading {
       margin-top: 5rem;
@@ -97,6 +127,11 @@
       font-size: 18rem;
       line-height: 24rem;
       color: $black;
+      @include mobile {
+        margin-top: 3rem;
+        font-size: 17rem;
+        line-height: 17rem;
+      }
     }
     &-text {
       margin-top: 5rem;
@@ -104,6 +139,11 @@
       font-size: 16rem;
       line-height: 24rem;
       color: $gray;
+      @include mobile {
+        margin-top: 10rem;
+        font-size: 14rem;
+        line-height: 16rem;
+      }
     }
     &-btn {
       margin-left: 96rem;
@@ -116,6 +156,9 @@
       border: none;
       outline: none;
       cursor: pointer;
+      @include mobile {
+        display: none;
+      }
     }
     &-img {
       width: 11rem;
@@ -135,6 +178,9 @@
     line-height: 31rem;
     text-decoration-line: underline;
     color: $white;
+    @include mobile {
+      font-size: 31rem;
+    }
     &-img {
       margin-left: 33rem;
       width: 12rem;

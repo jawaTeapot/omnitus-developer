@@ -420,8 +420,6 @@
       right: 111rem;
       background: $yellow;
       transform: rotate(9deg);
-      @include mobile {
-      }
     }
     &-7 {
       display: none;
@@ -432,8 +430,6 @@
       right: 473rem;
       background: $orange2;
       transform: rotate(12deg);
-      @include mobile {
-      }
     }
     &-8 {
       display: none;
@@ -444,8 +440,6 @@
       left: 223rem;
       background: $orange2;
       transform: rotate(13deg);
-      @include mobile {
-      }
     }
   }
   &__img {

@@ -2,6 +2,10 @@
   background-image: url("../img/recommendations-fone.png");
   background-position: 687rem -49rem;
   background-size: 753rem 740rem;
+  @include mobile {
+    background-position: -28rem -2rem;
+    background-size: 441rem 432rem;
+  }
   .promo {
     &__breadcrumb {
       display: block;
@@ -9,10 +13,17 @@
     &__top {
       margin-top: 6rem;
       justify-content: flex-start;
+      @include mobile {
+        margin-top: 0;
+      }
       &-heading {
         display: none;
         &--recommendations {
           display: block;
+          @include mobile {
+            font-size: 58rem;
+            line-height: 48rem;
+          }
         }
       }
       &-text {
@@ -29,6 +40,14 @@
         top: 361rem;
         left: 923rem;
         background-color: $blue2;
+        @include mobile {
+          padding: 5rem 4rem;
+          font-size: 16rem;
+          top: 276rem;
+          left: auto;
+          right: 32rem;
+          transform: rotate(19deg);
+        }
       }
       &-3 {
         display: none;
@@ -39,13 +58,31 @@
         right: auto;
         left: 85rem;
         transform: rotate(-12deg);
+        @include mobile {
+          padding: 2rem 4rem;
+          font-size: 16rem;
+          top: 199rem;
+          left: 38rem;
+        }
       }
       &-7 {
         display: block;
+        @include mobile {
+          padding: 2rem 6rem;
+          font-size: 16rem;
+          top: 72rem;
+          right: auto;
+          left: 40rem;
+          transform: rotate(21deg);
+        }
       }
     }
     &__plan {
       margin-top: 94rem;
+      @include mobile {
+        margin-top: 26rem;
+        padding: 35rem 17rem;
+      }
       &-heading {
         display: none;
       }
@@ -54,6 +91,9 @@
         &--recommendations {
           display: flex;
           width: 100%;
+          @include mobile {
+            display: block;
+          }
         }
       }
       &-item {
@@ -67,11 +107,17 @@
   &__block {
     margin-top: 66rem;
     border-radius: 37rem;
+    @include mobile {
+      margin-top: 47rem;
+    }
   }
   &__accordion {
     padding: 42rem 55rem 50rem 30rem;
     background-color: $white;
     border-radius: 37rem;
+    @include mobile {
+      padding: 25rem 15rem;
+    }
     &-item {
       margin-bottom: 15rem;
       display: flex;
@@ -82,12 +128,21 @@
       &:last-child {
         margin-bottom: 0;
       }
+      @include mobile {
+        flex-direction: column;
+        padding: 3rem 3rem 24rem;
+      }
     }
     &-heading {
       font-weight: 400;
       font-size: 26rem;
       line-height: 31rem;
       color: $black;
+      @include mobile {
+        font-size: 26rem;
+        line-height: 31rem;
+        align-self: flex-start;
+      }
     }
     &-btn {
       width: 55rem;
@@ -96,6 +151,13 @@
       align-items: center;
       justify-content: center;
       border-radius: 50%;
+      @include mobile {
+        margin-top: 24rem;
+        margin-right: 33rem;
+        width: 64rem;
+        height: 64rem;
+        align-self: flex-end;
+      }
     }
     &-button {
       display: flex;

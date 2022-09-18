@@ -4,6 +4,10 @@
     background-repeat: no-repeat;
     background-size: 788rem 678rem;
     background-position: 652rem 43rem;
+    @include mobile {
+      background-size: 434rem 373rem;
+      background-position: -14rem 70rem;
+    }
   }
   .promo {
     &__breadcrumb {
@@ -12,10 +16,17 @@
     &__top {
       margin-top: 65rem;
       justify-content: flex-start;
+      @include mobile {
+        margin-top: 0;
+      }
       &-heading {
         display: none;
         &--instructions {
           display: block;
+          @include mobile {
+            font-size: 70rem;
+            line-height: 58rem;
+          }
         }
       }
       &-text {
@@ -41,9 +52,22 @@
         right: 781rem;
         background: $yellow;
         transform: rotate(-12deg);
+        @include mobile {
+          top: 280rem;
+          right: 24rem;
+          padding: 2rem 5rem;
+          font-size: 14rem;
+        }
       }
       &-8 {
         display: block;
+        @include mobile {
+          padding: 2rem 7rem;
+          font-size: 16rem;
+          top: 114rem;
+          left: 59rem;
+          transform: rotate(21deg);
+        }
       }
     }
   }
@@ -51,11 +75,24 @@
     margin-top: 121rem;
     display: flex;
     justify-content: space-between;
+    @include mobile {
+      margin-top: 29rem;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
   }
   &__card {
     background: $white;
     border-radius: 37rem;
     width: 377rem;
+    @include mobile {
+      margin-bottom: 50rem;
+      width: 329rem;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
     &-top {
       display: flex;
       align-items: center;
@@ -65,10 +102,17 @@
     &-img {
       position: relative;
       top: -38rem;
+      @include mobile {
+        top: -6rem;
+      }
     }
     &-bottom {
       height: 301rem;
       padding: 0 20rem 50rem;
+      @include mobile {
+        height: auto;
+        padding: 30rem 20rem 31rem;
+      }
     }
     &-headline {
       font-weight: 700;
@@ -76,6 +120,9 @@
       line-height: 10rem;
       text-transform: uppercase;
       color: $red;
+      @include mobile {
+        font-size: 12rem;
+      }
     }
     &-heading {
       margin-top: 5rem;
@@ -83,9 +130,16 @@
       font-size: 18rem;
       line-height: 24rem;
       color: $black;
+      @include mobile {
+        font-size: 24rem;
+        line-height: 28rem;
+      }
     }
     &-buttons {
       margin-top: 40rem;
+      @include mobile {
+        margin-top: 21rem;
+      }
     }
     &-btn {
       margin-bottom: 20rem;
@@ -99,6 +153,9 @@
       line-height: 24rem;
       &:last-child {
         margin-bottom: 0;
+      }
+      @include mobile {
+        width: 100%;
       }
     }
   }
