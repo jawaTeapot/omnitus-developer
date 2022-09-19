@@ -116,8 +116,10 @@ body {
 }
 .select2-container--default .select2-selection--single {
   border: none !important;
+  border-radius: 120rem !important;
 }
 .select2-dropdown {
+  top: -6rem !important;
   padding: 20rem 11rem !important;
   border: 1rem solid #D2CAD2 !important;
   border-top: none !important;

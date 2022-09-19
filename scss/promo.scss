@@ -194,6 +194,7 @@
         z-index: 9999;
         @include mobile {
           margin-top: 20rem;
+          z-index: 0;
         }
         &:nth-child(1) {
           width: 105rem;
