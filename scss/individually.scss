@@ -61,7 +61,7 @@
         transform: rotate(9deg);
         background: $blue2;
         @include mobile {
-          font-size: 13px;
+          font-size: 13rem;
           padding: 5rem 2rem;
           left: auto;
           right: 2rem;
@@ -74,7 +74,7 @@
         left: -87rem;
         transform: rotate(-18deg);
         @include mobile {
-          font-size: 13px;
+          font-size: 13rem;
           padding: 5rem 7rem;
           left: auto;
           top: 45rem;

@@ -41,7 +41,7 @@
         display: none;
         @include mobile {
           margin-right: 0;
-          font-size: 50px;
+          font-size: 50rem;
           line-height: 48rem;
         }
       }
@@ -272,12 +272,12 @@
         width: 408rem;
         height: 205rem;
         top: -134rem;
-        left: 3px;
+        left: 3rem;
         @include mobile {
           width: 308rem;
           height: 150rem;
           top: -102rem;
-          left: -4px;
+          left: -4rem;
         }
       }
       &--announcement {
@@ -320,7 +320,7 @@
     line-height: 30rem;
     color: $white;
     @include mobile {
-      font-size: 14px;
+      font-size: 14rem;
       line-height: 17rem;
     }
     &-1 {
@@ -348,7 +348,7 @@
       background: $yellow;
       transform: rotate(9deg);
       @include mobile {
-        font-size: 14px;
+        font-size: 14rem;
         line-height: 17rem;
         padding: 6rem 2rem;
         top: 81rem;
@@ -367,11 +367,11 @@
       background: $orange2;
       transform: rotate(-27deg);
       @include mobile {
-        font-size: 14px;
+        font-size: 14rem;
         line-height: 17rem;
         padding: 6rem 5rem;
         top: 278rem;
-        left: 12px;
+        left: 12rem;
         transform: rotate(-12deg);
       }
     }

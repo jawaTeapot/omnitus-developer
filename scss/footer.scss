@@ -51,8 +51,8 @@
     line-height: 16rem;
     color: $gray;
     @include mobile {
-      font-size: 10px;
-      line-height: 12px;
+      font-size: 10rem;
+      line-height: 12rem;
     }
   }
   &__list {

@@ -21,7 +21,7 @@
         &--announcement {
           display: block;
           @include mobile {
-            font-size: 55px;
+            font-size: 55rem;
             line-height: 52rem;
           }
         }
@@ -111,7 +111,7 @@
       left: -24rem;
       transform: rotate(-18deg);
       @include mobile {
-        font-size: 13px;
+        font-size: 13rem;
         padding: 5rem 7rem;
         top: 53rem;
         left: auto;

@@ -43,7 +43,7 @@
       color: $white;
       text-shadow: 0 1rem 10rem rgba(115, 159, 187, 0.2);
       @include mobile {
-        margin-top: 12px;
+        margin-top: 12rem;
         font-size: 23rem;
         line-height: 23rem;
       }
