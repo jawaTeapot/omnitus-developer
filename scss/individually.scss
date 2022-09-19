@@ -127,7 +127,7 @@
       &-item {
         display: none;
         &--calculator {
-          display: block;
+          display: flex;
         }
       }
       &-img {
@@ -202,7 +202,9 @@
   }
   &__bottom {
     margin-top: 28rem;
-    width: 600rem;
+    @include mobile {
+      width: 600rem;
+    }
   }
   &__info {
     margin-top: 20rem;

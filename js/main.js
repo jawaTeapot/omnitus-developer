@@ -1,13 +1,16 @@
 $(document).ready(function() {
+    ////// СЕЛЕКТ //////
     $('.custom-select').each(function () {
         const placeholder = $(this).data().placeholder;
         $(this).select2({
             minimumResultsForSearch: -1,
         });
     })
-
+    ////// КАРУСЕЛЬ //////
     const settings = {
         mobileFirst: true,
+        infinite: false,
+        slidesToShow: 1.1,
         responsive: [
             {
                 breakpoint: 760,
@@ -24,6 +27,7 @@ $(document).ready(function() {
             return $('#carousel').slick(settings);
         }
     });
+    ////// МОДАЛКИ //////
     if ($.modal) {
         const modalSettings = {
             escapeClose: false,
@@ -46,4 +50,11 @@ $(document).ready(function() {
             $("#confirmation-modal").modal(modalSettings);
         });
     }
+    ////// ТАБЫ //////
+    $('#tabs .VideoAudio__nav-btn').on('click', function () {
+        $('#tabs .VideoAudio__nav-btn').removeClass('active');
+        $(this).addClass('active');
+        $('.tab-content').hide();
+        $('.' + $(this).data().tab).show();
+    });
 });

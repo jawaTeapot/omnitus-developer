@@ -46,7 +46,7 @@ $transition-duration: 0.3s;
 
 @mixin scrollbar {
   &::-webkit-scrollbar {
-    width: 5rem;
+    width: 2rem;
     height: 15rem;
   }
   &::-webkit-scrollbar-corner {
@@ -63,12 +63,12 @@ $transition-duration: 0.3s;
   }
   &::-webkit-scrollbar-thumb:vertical {
     min-height: 20rem;
-    background: #E2001A;
-    border-radius: 10px;
+    background: #E8742F;
+    border-radius: 7rem;
   }
   &::-webkit-scrollbar-track {
     background: #F6F6F6;
-    border-radius: 10px;
+    border-radius: 10rem;
   }
 }
 
@@ -107,7 +107,7 @@ a, button, :focus, :hover, :active {
 body {
   margin: 0;
   padding: 0;
-  min-width: 320px;
+  min-width: 320rem;
 }
 
 html {

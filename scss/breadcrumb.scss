@@ -4,6 +4,7 @@
   align-items: center;
   @include mobile {
     margin-top: 3rem;
+    align-items: flex-start;
   }
   &__link {
     font-weight: 400;
@@ -11,17 +12,14 @@
     line-height: 24rem;
     color: $blue;
     @include mobile {
-      width: 100rem;
-      font-size: 10rem;
+      max-width: 162rem;
+      font-size: 12rem;
       line-height: 24rem;
     }
-    &-active {
+    &.active {
       font-weight: 700;
-      font-size: 16rem;
-      line-height: 24rem;
-      color: $blue;
       @include mobile {
-        font-size: 10rem;
+        font-size: 12rem;
         line-height: 12rem;
       }
     }
@@ -30,8 +28,12 @@
       margin-right: 10rem;
       content: ">";
       @include mobile {
-        margin-left: 1rem;
-        margin-right: 1rem;
+        margin: 0 5rem;
+      }
+    }
+    &:last-child {
+      &:after {
+        content: none;
       }
     }
     &:hover {

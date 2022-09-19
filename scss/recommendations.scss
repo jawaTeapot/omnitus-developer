@@ -105,10 +105,15 @@
     }
   }
   &__block {
+    position: relative;
     margin-top: 66rem;
     border-radius: 37rem;
     @include mobile {
       margin-top: 47rem;
+    }
+    .shadow {
+      height: 190rem;
+      bottom: 51rem;
     }
   }
   &__accordion {

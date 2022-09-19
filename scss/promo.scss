@@ -184,12 +184,13 @@
       }
       &--calculator {
         height: 64rem;
-        padding: 16rem 13rem;
+        align-items: center;
         background-color: $white;
         border: 1rem solid $gray2;
         border-radius: 120rem;
         margin-top: 6rem;
         margin-right: 18rem;
+        //padding: 0 2rem;
         z-index: 9999;
         @include mobile {
           margin-top: 20rem;

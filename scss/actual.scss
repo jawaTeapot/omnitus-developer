@@ -125,4 +125,11 @@
       }
     }
   }
+  .slick-slide {
+    margin: 0 10rem;
+  }
+  /* the parent */
+  .slick-list {
+    margin: 0 -10rem;
+  }
 }

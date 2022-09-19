@@ -76,6 +76,11 @@ body {
     background-size: 480rem 390rem;
   }
 }
+.shadow {
+  position: absolute;
+  width: 100%;
+  background: linear-gradient(0deg, rgba(193,217,222,1) 0%, rgba(255,255,255,0) 100%);
+}
 .slick-prev {
   display: none !important;
 }
@@ -93,6 +98,8 @@ body {
   color: $black;
 }
 .select2-selection__rendered {
+  width: 100%;
+  padding-left: 21rem !important;
   font-size: 16rem;
 }
 
@@ -103,7 +110,7 @@ body {
   color: $gray;
 }
 .select2-results__options {
-  padding: 7rem 0 0;
+  padding: 0 2rem !important;
   max-height: 159rem !important;
   @include scrollbar();
 }
@@ -111,21 +118,25 @@ body {
   border: none !important;
 }
 .select2-dropdown {
-  padding: 20rem 5rem !important;
+  padding: 20rem 11rem !important;
   border: 1rem solid #D2CAD2 !important;
   border-top: none !important;
   border-radius: 0 0 32rem 32rem !important;
 }
-
-
 .select2-container--default .select2-results__option--highlighted.select2-results__option--selectable {
   background-color: transparent !important;
   color: $black !important;
   font-weight: 700;
 }
-
-.select2-container--default .select2-selection--single .select2-selection__arrow {
-  right: 23rem;
+.select2-selection__arrow b {
+  border: none !important;
+}
+.select2-selection__arrow {
+  content: url("../img/select.svg");
+  width: 13rem !important;
+  height: 14rem !important;
+  top: 7px !important;
+  right: 13px !important;
 }
 
 @import "header.scss";
@@ -157,4 +168,11 @@ body {
 .modal {
   padding: 0 !important;
   max-width: 1179rem !important;
+  border-radius: 37rem !important;
+  .waiver {
+    height: 358rem !important;
+    @include mobile {
+      height: 250rem !important;
+    }
+  }
 }

@@ -5,23 +5,46 @@
 <%- include('header.ejs'); %>
 <main class="VideoAudio">
     <%- include('promo.ejs'); %>
-    <section class="container">
-        <div class="VideoAudio__nav">
-            <div class="VideoAudio__nav-btn VideoAudio__nav-btn--active btn-secondary">Все</div>
-            <div class="VideoAudio__nav-btn btn-secondary">Видео</div>
-            <div class="VideoAudio__nav-btn btn-secondary">Аудио</div>
+    <section class="VideoAudio__store container">
+        <div class="VideoAudio__nav" id="tabs">
+            <div class="VideoAudio__nav-btn active btn-secondary" data-tab="tab-all">Все</div>
+            <div class="VideoAudio__nav-btn btn-secondary" data-tab="tab-video">Видео</div>
+            <div class="VideoAudio__nav-btn btn-secondary" data-tab="tab-audio">Аудио</div>
         </div>
         <div class="VideoAudio__showcase">
-            <div class="VideoAudio__showcase-top">
-                <%- include('cardVideo.ejs'); %>
-                <%- include('cardAudio.ejs'); %>
-                <%- include('cardVideo.ejs'); %>
-                <%- include('cardAudio.ejs'); %>
-                <%- include('cardVideo.ejs'); %>
-                <%- include('cardAudio.ejs'); %>
+            <div class="tab-content tab-all">
+                <div class="VideoAudio__showcase-top">
+                    <%- include('cardVideo.ejs'); %>
+                    <%- include('cardAudio.ejs'); %>
+                    <%- include('cardVideo.ejs'); %>
+                    <%- include('cardAudio.ejs'); %>
+                    <%- include('cardVideo.ejs'); %>
+                    <%- include('cardAudio.ejs'); %>
+                </div>
             </div>
+            <div class="tab-content tab-video">
+                <div class="VideoAudio__showcase-top">
+                    <%- include('cardVideo.ejs'); %>
+                    <%- include('cardVideo.ejs'); %>
+                    <%- include('cardVideo.ejs'); %>
+                    <%- include('cardVideo.ejs'); %>
+                    <%- include('cardVideo.ejs'); %>
+                    <%- include('cardVideo.ejs'); %>
+                </div>
+            </div>
+            <div class="tab-content tab-audio">
+                <div class="VideoAudio__showcase-top">
+                    <%- include('cardAudio.ejs'); %>
+                    <%- include('cardAudio.ejs'); %>
+                    <%- include('cardAudio.ejs'); %>
+                    <%- include('cardAudio.ejs'); %>
+                    <%- include('cardAudio.ejs'); %>
+                    <%- include('cardAudio.ejs'); %>
+                </div>
+            </div>
+            <div class="shadow"></div>
         </div>
-        <div class="VideoAudio__shadow">
+        <div class="VideoAudio__buttons">
             <button class="VideoAudio__btn">
                 Открыть больше
                 <img class="VideoAudio__btn-img" src="./img/arrow-down.svg" alt="v">
