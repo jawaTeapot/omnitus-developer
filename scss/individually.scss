@@ -10,6 +10,7 @@
   }
   .buttons__block {
     display: flex;
+    width: 208rem;
     @include mobile {
       margin-right: 0;
       margin-top: 26rem;
@@ -207,7 +208,7 @@
     }
   }
   &__info {
-    margin-top: 20rem;
+    margin-top: 65rem;
     @include mobile {
       margin-top: 44rem;
     }
@@ -240,7 +241,8 @@
     }
     .buttons__block {
       margin-top: 47rem;
-      flex-direction: inherit;
+      width: 664rem;
+      flex-direction: initial;
       &-btn {
         margin-right: 20rem;
         &:last-child {
@@ -249,6 +251,7 @@
       }
       @include mobile {
         margin-top: 40rem;
+        width: 100%;
         flex-direction: column;
       }
     }

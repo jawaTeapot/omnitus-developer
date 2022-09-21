@@ -1,5 +1,5 @@
 .subscription {
-  margin-top: 154rem;
+  margin-top: 155rem;
   padding: 39rem 142rem 40rem 309rem;
   background-color: $blue3;
   border-radius: 40rem;
@@ -98,6 +98,7 @@
     height: 849rem;
     top: -169rem;
     left: -135rem;
+    pointer-events: none;
     @include mobile {
       width: 234rem;
       height: 413rem;

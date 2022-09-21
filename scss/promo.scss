@@ -190,7 +190,6 @@
         border-radius: 120rem;
         margin-top: 6rem;
         margin-right: 18rem;
-        //padding: 0 2rem;
         z-index: 9999;
         @include mobile {
           margin-top: 20rem;
@@ -226,6 +225,10 @@
         width: 276rem;
         border: 1rem solid $gray2;
         border-radius: 120rem;
+        z-index: 9999;
+        @include mobile {
+          z-index: 0;
+        }
       }
     }
     &-input {

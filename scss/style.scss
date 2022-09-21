@@ -11,6 +11,7 @@ $gray3: #C4C4C4;
 $gray4: #D7D7D7;
 $gray5: #EFEFEF;
 $gray6: #E6E6E6;
+$gray7: #919191;
 $white: #FFFFFF;
 $blue: #316DB5;
 $blue2: #4698F8;
@@ -100,6 +101,7 @@ body {
 .select2-selection__rendered {
   width: 100%;
   padding-left: 21rem !important;
+  font-weight: 700;
   font-size: 16rem;
 }
 
@@ -137,8 +139,8 @@ body {
   content: url("../img/select.svg");
   width: 13rem !important;
   height: 14rem !important;
-  top: 7px !important;
-  right: 13px !important;
+  top: 7rem !important;
+  right: 13rem !important;
 }
 
 @import "header.scss";
@@ -166,6 +168,7 @@ body {
 @import "recommendations.scss";
 @import "instructions.scss";
 @import "valuable.scss";
+@import "burger-menu.scss";
 
 .modal {
   padding: 0 !important;
