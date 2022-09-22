@@ -2,7 +2,7 @@
   padding-top: 86rem;
   position: relative;
   @include mobile {
-    padding-top: 301rem;
+    padding-top: 304rem;
   }
   &__breadcrumb {
     position: absolute;
@@ -335,10 +335,12 @@
       background: $blue2;
       transform: rotate(-12deg);
       @include mobile {
-        padding: 6rem 2rem;
+        padding: 3rem 2rem;
+        font-size: 16rem;
+        line-height: 24rem;
         bottom: auto;
         left: auto;
-        top: 339rem;
+        top: 341rem;
         right: 23rem;
         background: $blue;
         transform: rotate(-25deg);
@@ -353,10 +355,10 @@
       background: $yellow;
       transform: rotate(9deg);
       @include mobile {
-        font-size: 14rem;
+        font-size: 16rem;
         line-height: 17rem;
-        padding: 6rem 2rem;
-        top: 81rem;
+        padding: 6rem 3rem;
+        top: 84rem;
         left: auto;
         right: 46rem;
         background: $yellow;
@@ -372,11 +374,11 @@
       background: $orange2;
       transform: rotate(-27deg);
       @include mobile {
-        font-size: 14rem;
+        font-size: 16rem;
         line-height: 17rem;
-        padding: 6rem 5rem;
-        top: 278rem;
-        left: 12rem;
+        padding: 6rem 6rem;
+        top: 281rem;
+        left: 14rem;
         transform: rotate(-12deg);
       }
     }
